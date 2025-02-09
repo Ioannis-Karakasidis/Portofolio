@@ -1,1 +1,10 @@
-<p>footer works!</p>
+<div class="footerbox">
+  <div>
+    @if(Isgerman){<a href="#Impressum">Impressum</a> }@else{<a
+      href="#Legalnotice"
+      >Legal notice </a
+    >} <a href="#IoannisKarakasidis">© Ioannis Karakasidis 2025</a>
+  </div>
+  <app-headerlogo [isgerman]="Isgerman"></app-headerlogo>
+  <app-contacticons></app-contacticons>
+</div>

@@ -1,0 +1,20 @@
+<div class="profile-card">
+  <div class="profile-card__wrapper">
+    <div class="profile-card__image">
+      <img src="assets/img/Bild1.png" alt="" />
+    </div>
+    <div class="profile-card__info">
+      <div class="profile-card__name-text">
+        <app-headerlogo [path]="path"></app-headerlogo>
+        <span>Ioannis Karakasidis</span>
+        @if(Isgerman) {
+        <span>Frontend Entwickler </span>
+        }@else {
+        <span>FRONTEND DEVELOPER </span>
+        }
+      </div>
+      <a href="#"><img src="assets/img/Arrow Up.png" alt="" /></a>
+    </div>
+    <app-contacticons [customClass]="'custom-flex'" [path]="path"></app-contacticons>
+  </div>
+</div>

@@ -1,6 +1,13 @@
 app-header {
-  display: flex;
+  background-color: #89bcd9;
   width: 100%;
+  display: flex;
   justify-content: center;
-  height: auto;
+}
+
+app-footer {
+  background-color: #89bcd9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

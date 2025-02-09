@@ -1,24 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { HeaderlogoComponent } from '../headerlogo/headerlogo.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [HeaderlogoComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   isgerman = false;
-  
+  @Output() Isgerman = new EventEmitter<boolean>();
 
   changetogerman() {
     this.isgerman = true;
-    console.log(this.isgerman);
+    this.Isgerman.emit(this.isgerman)
+    
   }
 
   changetoenglish() {
     this.isgerman = false;
-    console.log(this.isgerman);
-    
+    this.Isgerman.emit(this.isgerman)
+
   }
 }

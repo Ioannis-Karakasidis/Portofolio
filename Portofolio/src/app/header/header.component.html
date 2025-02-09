@@ -1,13 +1,9 @@
 <div class="header-box">
-  <div>
-    <img src="../../assets/img/Logo icon.png" alt="" />
-    <span>I.KARAKASIDIS</span>
-    <span>@if (isgerman) { entwickler }@else {developer}</span>
-  </div>
+  <app-headerlogo [isgerman]="isgerman"></app-headerlogo>
   <div>
     <a href="#Why me"> @if (isgerman) { Warum ich }@else {Why me}</a
     ><a href="#Skills"> @if (isgerman) { Fähigkeiten}@else {Skills}</a
-    ><a href="#Projects"> @if (isgerman) { Fähigkeiten }@else {Projects}</a
+    ><a href="#Projects"> @if (isgerman) { Projekte }@else {Projects}</a
     ><a href="#Contact"> @if (isgerman) { Kontakt }@else {Contact }</a>
   </div>
   <div>

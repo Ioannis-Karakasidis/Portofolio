@@ -1,30 +1,10 @@
 .header-box {
-  background-color: #89bcd9;
-  padding: 16px 109px 16px 109px;
+  height: 104px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1920px;
   width: 100%;
-  height: auto;
-  > div:nth-child(1) {
-    padding: unset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    > span:nth-child(2) {
-      color: #f8f5ec;
-      font-weight: 400;
-      font-size: 14px;
-      font-family: "Anta-Regular";
-    }
-    > span:nth-child(3) {
-      color: #262e34;
-      font-weight: 300;
-      font-size: 14px;
-      font-family: "JosefinSans";
-    }
-  }
   > div:nth-child(2) {
     > a {
       text-decoration: none;
@@ -42,12 +22,13 @@
   div:nth-child(3) {
     max-width: 92px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
     > button {
       border: none;
       background: none;
       cursor: pointer;
-      font-weight: 400;
-      font-size: 18px;
+      width: fit-content;
     }
   }
 }

@@ -1,0 +1,15 @@
+div {
+  width: 122px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1124px) {
+    width: 154px;
+    padding: 30 63px 30px 63px;
+  }
+}
+
+.custom-flex {
+  width: 30px;
+  flex-direction: column;
+  gap: 10px;
+}

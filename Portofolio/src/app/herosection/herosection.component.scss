@@ -1,0 +1,81 @@
+.profile-card__wrapper {
+  padding: 50px;
+  background-color: #262e34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1124px) {
+    flex-direction: column;
+  }
+  > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    align-items: flex-end;
+    > a {
+      width: 38px;
+      height: 89px;
+      border: 1px solid #89bcd9;
+      border-radius: 50% 50%;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background: #f8f5ec1f;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+app-contacticons {
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  div:nth-child(0) {
+    width: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.profile-card__image {
+  padding: unset;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/Bild.png");
+  > img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.profile-card__name-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  > span:nth-child(2) {
+    font-family: "Anta-Regular";
+    font-size: 88px;
+    font-weight: 400;
+    color: #f8f5ec;
+    @media (max-width: 495px) {
+      font-size: 13vw;
+    }
+  }
+  > span:nth-child(3) {
+    color: #f8f5ec;
+    font-weight: 400;
+    font-size: 40px;
+    font-family: "JosefinSans";
+    @media (max-width: 495px) {
+      font-size: 13vw;
+    }
+  }
+}
