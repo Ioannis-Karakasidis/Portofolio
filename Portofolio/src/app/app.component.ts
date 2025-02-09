@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HerosectionComponent } from './herosection/herosection.component';
+import { WhymeComponent } from './whyme/whyme.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { HerosectionComponent } from './herosection/herosection.component';
     HeaderComponent,
     FooterComponent,
     HerosectionComponent,
+    WhymeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
