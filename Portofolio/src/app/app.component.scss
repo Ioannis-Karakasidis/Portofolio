@@ -13,6 +13,9 @@ app-herosection {
   display: flex;
   justify-content: center;
   padding: 79px 114px 79px 114px;
+  @media (max-width: 400px) {
+    padding: unset;
+  }
 }
 
 app-footer {

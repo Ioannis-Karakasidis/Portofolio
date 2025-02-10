@@ -4,7 +4,10 @@
   gap: 80px;
   display: flex;
   flex-direction: column;
-
+  @media (max-width: 400px) {
+    gap: 40px;
+    padding: 10vw;
+  }
   > div:nth-child(1) {
     font-size: 60px;
     text-align: center;
