@@ -3,6 +3,16 @@ app-header {
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+app-herosection {
+  background-color: #262e34;
+  display: flex;
+  justify-content: center;
+  padding: 79px 114px 79px 114px;
 }
 
 app-footer {
@@ -14,8 +24,10 @@ app-footer {
 
 app-whyme {
   width: 100%;
-  background-color: #262E34;
+  background-color: #262e34;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+

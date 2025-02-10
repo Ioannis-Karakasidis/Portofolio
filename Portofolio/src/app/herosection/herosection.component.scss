@@ -1,101 +1,116 @@
-.profile-card__wrapper {
-  padding: 50px;
-  background-color: #262e34;
+.profile-card {
   display: flex;
   justify-content: center;
-  align-items: center;
-  @media (max-width: 1124px) {
+  flex-direction: row;
+  @media (max-width: 1280px) {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+  }
+  > div:nth-child(1) {
+    > button:nth-child(2) {
+      border: none;
+      background: none;
+    }
   }
   > div:nth-child(2) {
+    background-image: url("../../assets/img/Bg shape for Photo (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 37rem;
+    height: 39rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
     align-items: flex-end;
-    @media (max-width: 1124px) {
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 40%;
+    @media (max-width: 800px) {
+      width: 80vw;
+      height: unset;
+    }
+    @media (max-width: 400px) {
+      width: 80%;
+      height: 80%;
+      display: flex;
       align-items: center;
     }
-    > a {
-      width: 38px;
-      height: 89px;
-      border: 1px solid #89bcd9;
-      border-radius: 50% 50%;
-      background: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:hover {
-        background: #f8f5ec1f;
-        cursor: pointer;
+    &:hover {
+      background-image: url("../../assets/img/Bild.png");
+    }
+    > img:nth-child(1) {
+      height: 38rem;
+      @media (max-width: 800px) {
+        height: auto;
+        width: 80%;
       }
     }
   }
-}
-
-app-contacticons {
-  height: 660px;
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 1124px) {
-    height: unset;
-  }
-}
-
-.profile-card__image {
-  padding: unset;
-  max-width: 600px;
-  width: 100%;
-  height: 619px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border-radius: 50% 43%;
-  overflow: hidden;
-  background-image: url("../../assets/img/Bild.png");
-   @media (max-width: 723px) {
-    height: unset;
-   }
-  &:hover {
-    background-image: url("../../assets/img/Bg shape for Photo (1).png");
-  }
-  > img {
-    @media (max-width: 1205px) {
-      max-width: unset;
-      width: 78%;
-      height: auto;
-  
+  > div:nth-child(3) {
+    display: flex;
+    @media (max-width: 1205) {
+      display: flex;
+      flex-direction: row;
     }
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-}
-
-.profile-card__name-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  > span:nth-child(2) {
-    font-family: "Anta-Regular";
-    font-size: 88px;
-    font-weight: 400;
-    color: #f8f5ec;
-    @media (max-width: 495px) {
-      font-size: 13vw;
+    @media (max-width: 1010px) {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
     }
-  }
-  > span:nth-child(3) {
-    color: #f8f5ec;
-    font-weight: 400;
-    font-size: 40px;
-    font-family: "JosefinSans";
-    @media (max-width: 495px) {
-      font-size: 13vw;
+    > div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      @media (max-width: 1205px) {
+        align-items: center;
+        gap: 20px;
+      }
+      > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > span:nth-child(2) {
+          font-family: "Anta-Regular";
+          font-size: 5rem;
+          font-weight: 400;
+          color: #f8f5ec;
+          text-align: center;
+          @media (max-width: 800px) {
+            font-size: 12vw;
+          }
+        }
+        > span:nth-child(3) {
+          font-family: "JosefinSans";
+          font-size: 40px;
+          font-weight: 400;
+          color: #f8f5ec;
+          text-align: center;
+          @media (max-width: 800px) {
+            font-size: 12vw;
+          }
+        }
+      }
+      > a:nth-child(2) {
+        border: 1px solid #89bcd9;
+        border-radius: 50% 50%;
+        padding: 10px;
+        &:hover {
+          background-color: #3f454a;
+        }
+      }
     }
   }
+  @media (max-width: 400px) {
+    .d-none {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+
+.d-none {
+  display: none;
 }

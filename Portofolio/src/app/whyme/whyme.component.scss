@@ -4,20 +4,24 @@
   gap: 80px;
   display: flex;
   flex-direction: column;
-  
+
   > div:nth-child(1) {
     font-size: 60px;
     text-align: center;
     font-weight: 400;
     font-family: "Anta-Regular";
-    color: #89BCD9;
+    color: #89bcd9;
   }
   > div:nth-child(2) {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     @media (max-width: 1031px) {
       flex-direction: column;
       gap: 20px;
+      align-items: center;
+      width: 80vw;
+      text-align: center;
     }
     > div:nth-child(1) {
       display: flex;
@@ -27,7 +31,12 @@
       }
       > span {
         color: white;
-        max-width: 282px;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: "JosefinSans";
+        > span:nth-child(1) {
+          color: #89bcd9;
+        }
       }
       > a {
         display: flex;
@@ -36,15 +45,22 @@
     }
     > div:nth-child(2) {
       max-width: 379px;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       > span:nth-child(1) {
-       color: #F8F5EC;
-       font-family: 'JosefinSans';
-       font-weight: 400;
-       font-size: 18px;
+        color: #f8f5ec;
+        font-family: "JosefinSans";
+        font-weight: 400;
+        font-size: 18px;
       }
-      >a:nth-child(2){
+      > a:nth-child(2) {
         display: flex;
         justify-content: flex-end;
+        @media (max-width: 1031px) {
+          justify-content: center;
+        }
       }
     }
   }
