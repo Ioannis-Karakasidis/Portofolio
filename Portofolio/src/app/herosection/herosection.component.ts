@@ -13,10 +13,12 @@ import { CommonModule } from '@angular/common';
 export class HerosectionComponent {
   path = 'assets/img/Vector 29-1.png';
   @Input() Isgerman: boolean = false;
-  @ViewChild('imageprofile', { static: true }) image!: ElementRef<HTMLImageElement>;
-  @ViewChild('imagebox', { static: true }) imagebox!: ElementRef<HTMLDivElement>;
+  @ViewChild('imageprofile', { static: true })
+  image!: ElementRef<HTMLImageElement>;
+  @ViewChild('imagebox', { static: true })
+  imagebox!: ElementRef<HTMLDivElement>;
 
-  showImage: boolean = true; 
+  showImage: boolean = true;
 
   toggleImage() {
     this.showImage = !this.showImage;

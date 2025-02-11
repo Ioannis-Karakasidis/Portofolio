@@ -25,6 +25,12 @@ a {
   justify-content: center;
   gap: 20px;
   align-items: center;
+  >a{
+    color: #262E34;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'JosefinSans';
+  }
 }
 
 .imagesize {

@@ -5,6 +5,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HerosectionComponent } from './herosection/herosection.component';
 import { WhymeComponent } from './whyme/whyme.component';
+import { MyskillComponent } from './myskill/myskill.component';
+import { ReferencesComponent } from './references/references.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,9 @@ import { WhymeComponent } from './whyme/whyme.component';
     HeaderComponent,
     FooterComponent,
     HerosectionComponent,
-    WhymeComponent
+    WhymeComponent,
+    MyskillComponent,
+    ReferencesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
