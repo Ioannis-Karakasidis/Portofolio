@@ -1,0 +1,24 @@
+<div class="myprojects-section">
+  <div><h2>My Projects</h2></div>
+  <div>
+    <div>
+      <div>
+        <div [ngClass]="{ active: activeProject === 1 }">
+          <button (click)="showactiveclass($event, 1)">1. DA Bubble</button>
+        </div>
+        <div [ngClass]="{ active: activeProject === 2 }">
+          <button (click)="showactiveclass($event, 2)">2. El Poco Loco</button>
+        </div>
+        <div [ngClass]="{ active: activeProject === 3 }">
+          <button (click)="showactiveclass($event, 3)">3. Join</button>
+        </div>
+        <div [ngClass]="{ active: activeProject === 4 }">
+          <button (click)="showactiveclass($event, 4)">
+            4. Ongoing Project
+          </button>
+        </div>
+      </div>
+      <div><div id="projectsbox"></div></div>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,8 @@ import { HerosectionComponent } from './herosection/herosection.component';
 import { WhymeComponent } from './whyme/whyme.component';
 import { MyskillComponent } from './myskill/myskill.component';
 import { ReferencesComponent } from './references/references.component';
+import { ContactsectionComponent } from './contactsection/contactsection.component';
+import { MyprojectssectionComponent } from './myprojectssection/myprojectssection.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ import { ReferencesComponent } from './references/references.component';
     HerosectionComponent,
     WhymeComponent,
     MyskillComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    ContactsectionComponent,
+    MyprojectssectionComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

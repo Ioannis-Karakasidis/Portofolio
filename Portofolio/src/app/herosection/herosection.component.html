@@ -26,7 +26,7 @@
   <div>
     <div>
       <div>
-        <app-headerlogo   [path]="path"></app-headerlogo>
+        <app-headerlogo [path]="path"></app-headerlogo>
 
         <span>Ioannis Karakasidis</span>
         @if(Isgerman) {
@@ -35,7 +35,11 @@
         <span>FRONTEND DEVELOPER </span>
         }
       </div>
-      <a href="#"><img src="assets/img/Arrow Up.png" alt="" /></a>
+      <div>
+        <div>
+          <a href="#why-me"><img src="assets/img/Arrow Down.png" alt="" /></a>
+        </div>
+      </div>
     </div>
     <app-contacticons
       [customClass]="'custom-flex'"
