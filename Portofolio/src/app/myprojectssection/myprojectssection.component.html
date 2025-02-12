@@ -3,22 +3,69 @@
   <div>
     <div>
       <div>
-        <div [ngClass]="{ active: activeProject === 1 }">
-          <button (click)="showactiveclass($event, 1)">1. DA Bubble</button>
-        </div>
-        <div [ngClass]="{ active: activeProject === 2 }">
-          <button (click)="showactiveclass($event, 2)">2. El Poco Loco</button>
-        </div>
-        <div [ngClass]="{ active: activeProject === 3 }">
-          <button (click)="showactiveclass($event, 3)">3. Join</button>
-        </div>
-        <div [ngClass]="{ active: activeProject === 4 }">
-          <button (click)="showactiveclass($event, 4)">
-            4. Ongoing Project
+        <div [ngClass]="{ active: activeProject === 'DABubble' }">
+          <button (click)="showactiveclass($event, 'DABubble')">
+            1. DA Bubble
           </button>
         </div>
+        <div [ngClass]="{ active: activeProject === 'ElPocoLoco' }">
+          <button (click)="showactiveclass($event, 'ElPocoLoco')">
+            2. El Poco Loco
+          </button>
+        </div>
+        <div [ngClass]="{ active: activeProject === 'Join' }">
+          <button (click)="showactiveclass($event, 'Join')">3. Join</button>
+        </div>
       </div>
-      <div><div id="projectsbox"></div></div>
+      <div>
+        <div *ngIf="information[activeProject]" class="1">
+          <div>
+            <div>
+              <div>
+                <img src="assets/img/Ellipse 8.png" alt="" />
+                <h2 class="title">
+                  {{ information[activeProject].details[0].title }}
+                </h2>
+                <p class="text">{{ information[activeProject].duration }}</p>
+              </div>
+              <div>
+                <span class="text">{{
+                  information[activeProject].details[0].description
+                }}</span>
+              </div>
+            </div>
+            <div
+              *ngFor="
+                let section of information[activeProject].details.slice(1)
+              "
+            >
+              <div>
+                <img src="assets/img/Ellipse 8.png" alt="" />
+                <h2 class="title">{{ section.title }}</h2>
+              </div>
+              <div>
+                <span class="text">{{ section.description }}</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="title">Technologies</p>
+            <div>
+              <div *ngFor="let icon of information[activeProject].technologies">
+                <img src="assets/img/skillicons/{{ icon }}.png" alt="" />
+              </div>
+            </div>
+            <div>
+              <img
+                class="preview"
+                src="{{ information[activeProject].preview }}"
+                alt=""
+              />
+            </div>
+            <div><button class="text">Live Test</button><a href="" class="text">GitHub</a></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
