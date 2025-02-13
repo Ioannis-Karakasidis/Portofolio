@@ -6,15 +6,25 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
-  padding: 150px;
+  padding: 150px 0 150px 0;
+  @media (max-width: 320px) {
+    height: unset;
+  }
+  @media (max-width: 1132px) {
+    flex-direction: column;
+  }
   > div:nth-child(1) {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
     > div:nth-child(1) {
       width: 100%;
       height: 135px;
       text-align: center;
+      @media (max-width: 320px) {
+        max-width: 253px;
+      }
       > h2:nth-child(1) {
         font-family: "Anta-Regular";
         font-weight: 400;
@@ -27,18 +37,40 @@
   > div:nth-child(1) {
     > div:nth-child(2) {
       width: 100%;
+      @media (max-width: 1132px) {
+        height: 100%;
+      }
       > div:nth-child(1) {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        @media (max-width: 1132px) {
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          @media (max-width: 320px) {
+            gap: 25px;
+          }
+        }
+        > div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+        }
         > div:nth-child(1) {
           display: flex;
-          width: 417px;
+          max-width: 417px;
           font-family: "JosefinSans";
           font-weight: 400;
           text-align: start;
           font-size: 18px;
           color: #f8f5ec;
+          > span:nth-child(1) {
+            text-align: center;
+            width: 231px;
+          }
         }
         > div:nth-child(2) {
           > div:nth-child(1) {
@@ -50,6 +82,10 @@
               font-weight: 400;
               font-size: 20px;
               color: #f8f5ec;
+              @media (max-width: 445px) {
+                max-width: 190px;
+                overflow-wrap: break-word;
+              }
             }
           }
           > div:nth-child(2) {
@@ -73,12 +109,24 @@
       display: flex;
       flex-direction: column;
       gap: 17px;
+      @media (max-width: 1132px) {
+        align-items: center;
+      }
       > div:nth-child(1) {
         display: flex;
         gap: 21px;
+        width: 100%;
+        @media (max-width: 1132px) {
+          flex-direction: column;
+        }
         > div {
           display: flex;
           flex-direction: column;
+          max-width: 445px;
+          width: calc(100% - 57px);
+          @media (max-width: 320px) {
+            width: unset;
+          }
           > label:nth-child(1) {
             font-family: "JosefinSans";
             font-weight: 400;
@@ -86,11 +134,10 @@
             color: #89bcd9;
           }
           > input:nth-child(2) {
-            width: 445px;
+            max-width: 445px;
             border: 1px solid #89bcd9;
             border-radius: 25px;
             background: none;
-            border-width: none;
             padding: 15px;
             &:focus {
               background-color: #313f48;
@@ -101,6 +148,9 @@
       > div:nth-child(2) {
         display: flex;
         flex-direction: column;
+        @media (max-width: 1132px) {
+          width: 100%;
+        }
         > label:nth-child(1) {
           font-family: "JosefinSans";
           font-weight: 400;
@@ -129,10 +179,9 @@
       border-radius: 50% 50%;
       padding: 10px;
       cursor: pointer;
-      >a:nth-child(1){
+      > a:nth-child(1) {
         display: flex;
         scroll-behavior: smooth;
-
       }
       &:hover {
         background-color: #3f454a;

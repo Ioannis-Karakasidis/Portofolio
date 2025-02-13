@@ -3,6 +3,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @media (max-width: 320px) {
+    gap: 40px;
+  }
   > div:nth-child(1) {
     > h2:nth-child(1) {
       font-family: "Anta-Regular";
@@ -28,6 +31,14 @@
         align-items: center;
         justify-content: flex-start;
         max-width: 1920px;
+        @media (max-width: 445px) {
+          width: 97% !important;
+          overflow-y: hidden;
+          scrollbar-width: none;
+        }
+        @media (max-width: 400px) {
+          width: unset;
+        }
         > div {
           padding: 42px 20px 24px 20px;
           border-radius: 35px 35px 0px 0px;
@@ -63,19 +74,38 @@
           align-items: center;
           width: 100%;
           justify-content: space-evenly;
+          @media (max-width: 1137px) {
+            flex-direction: column-reverse;
+            @media (max-width: 445px) {
+              gap: 25px;
+            }
+          }
           > div:nth-child(1) {
             min-height: 114px;
+            @media (max-width: 320px) {
+              gap: 25px;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+            }
             > div:nth-child(1) {
               > div:nth-child(1) {
                 display: flex;
-                max-width: 384px;
+                max-width: 279px;
                 justify-content: space-between;
                 align-items: center;
+                @media (max-width: 445px) {
+                  justify-content: space-evenly;
+                }
               }
               > div:nth-child(2) {
                 max-width: 516px;
                 display: flex;
                 margin-left: 57px;
+                @media (max-width: 320px) {
+                  margin-left: unset;
+                  text-align: center;
+                }
               }
             }
             > div:nth-child(2) {
@@ -84,11 +114,18 @@
                 max-width: 542px;
                 justify-content: space-between;
                 align-items: center;
+                @media (max-width: 445px) {
+                  justify-content: space-evenly;
+                }
               }
               > div:nth-child(2) {
                 max-width: 516px;
                 display: flex;
                 margin-left: 57px;
+                @media (max-width: 320px) {
+                  margin-left: unset;
+                  text-align: center;
+                }
               }
             }
             > div:nth-child(3) {
@@ -97,11 +134,18 @@
                 max-width: 388px;
                 justify-content: space-between;
                 align-items: center;
+                @media (max-width: 445px) {
+                  justify-content: space-evenly;
+                }
               }
               > div:nth-child(2) {
                 max-width: 560px;
                 display: flex;
                 margin-left: 57px;
+                @media (max-width: 320px) {
+                  margin-left: unset;
+                  text-align: center;
+                }
               }
             }
           }
@@ -111,20 +155,59 @@
             align-items: center;
             flex-direction: column;
             gap: 5px;
+            width: 100%;
+            > div:nth-child(1) {
+              display: flex;
+              width: 100%;
+              align-items: center;
+              justify-content: space-evenly;
+              @media (max-width: 1150px) {
+                width: 250px;
+              }
+              > p:nth-child(1) {
+                display: flex;
+                > span:nth-child(1) {
+                  @media (max-width: 1132px) {
+                    display: flex;
+                  }
+                }
+              }
+              > p:nth-child(2) {
+                @media (max-width: 1132px) {
+                  display: flex;
+                }
+                @media (max-width: 445px) {
+                  width: 86px;
+                  overflow-wrap: anywhere;
+                }
+              }
+            }
             > div:nth-child(2) {
               display: flex;
               width: 100%;
               justify-content: space-evenly;
+              @media (max-width: 1135px) {
+                display: none;
+              }
               > div:nth-child(1) {
                 display: flex;
                 justify-content: space-evenly;
               }
             }
+            > div:nth-child(3) {
+              display: flex;
+              justify-content: space-evenly;
+              width: 100%;
+            }
             > div:nth-child(4) {
               width: 100%;
               display: flex;
               justify-content: space-evenly;
-              max-width: 303px;
+              @media (max-width: 445px) {
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+              }
               > button:nth-child(1) {
                 background: none;
                 border: none;
@@ -135,11 +218,17 @@
                 color: #2d383f;
               }
               > a:nth-child(2) {
-                background-color: none;
+                background: none;
                 border: 1px solid #89bcd9;
                 color: #89bcd9;
                 padding: 13px 30px 13px 30px;
                 border-radius: 30px;
+                @media (max-width: 445px) {
+                  padding: 13px 0 13px 0;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
               }
             }
           }
@@ -153,6 +242,10 @@
   width: 453px;
   height: 312px;
   border-radius: 30px;
+  @media (max-width: 484px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .active {
@@ -164,6 +257,21 @@
   font-weight: 400;
   font-size: 28px;
   color: #f8f5ec;
+  @media (max-width: 445px) {
+    width: 200px;
+  }
+}
+
+.smalltext {
+  font-family: "JosefinSans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #f8f5ec;
+}
+
+.mobileview {
+  display: none;
+  justify-content: space-evenly;
 }
 
 .text {
@@ -171,4 +279,7 @@
   font-weight: 400;
   font-size: 18px;
   color: #f8f5ec;
+  @media (max-width: 445px) {
+    width: 250px;
+  }
 }

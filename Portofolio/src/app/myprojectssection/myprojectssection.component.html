@@ -20,25 +20,7 @@
       <div>
         <div *ngIf="information[activeProject]" class="1">
           <div>
-            <div>
-              <div>
-                <img src="assets/img/Ellipse 8.png" alt="" />
-                <h2 class="title">
-                  {{ information[activeProject].details[0].title }}
-                </h2>
-                <p class="text">{{ information[activeProject].duration }}</p>
-              </div>
-              <div>
-                <span class="text">{{
-                  information[activeProject].details[0].description
-                }}</span>
-              </div>
-            </div>
-            <div
-              *ngFor="
-                let section of information[activeProject].details.slice(1)
-              "
-            >
+            <div *ngFor="let section of information[activeProject].details">
               <div>
                 <img src="assets/img/Ellipse 8.png" alt="" />
                 <h2 class="title">{{ section.title }}</h2>
@@ -49,7 +31,13 @@
             </div>
           </div>
           <div>
-            <p class="title">Technologies</p>
+            <div class="smalltext">
+              <p class="title">Technologies<span class="mobileview">:</span></p>
+              <p class="mobileview">
+                {{ information[activeProject].technologies }}
+              </p>
+            </div>
+
             <div>
               <div *ngFor="let icon of information[activeProject].technologies">
                 <img src="assets/img/skillicons/{{ icon }}.png" alt="" />
@@ -62,7 +50,10 @@
                 alt=""
               />
             </div>
-            <div><button class="text">Live Test</button><a href="" class="text">GitHub</a></div>
+            <div>
+              <button class="text">Live Test</button
+              ><a href="" class="text">GitHub</a>
+            </div>
           </div>
         </div>
       </div>

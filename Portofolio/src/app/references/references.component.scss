@@ -2,8 +2,8 @@
   max-width: 1250px;
   width: 100%;
   height: 479px;
-  padding: 3vw;
   gap: 80px;
+  padding: 100px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +12,9 @@
     height: unset;
   }
   @media (max-width: 400px) {
-    padding: unset;
+    padding: 100px 0 0 0;
   }
+
   > div:nth-child(1) {
     > h2:nth-child(1) {
       font-family: "JosefinSans";
