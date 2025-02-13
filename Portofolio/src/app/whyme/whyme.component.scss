@@ -1,6 +1,6 @@
 .whyme-section {
   max-width: 860px;
-  padding: auto;
+  padding: 100px 0 100px 0;
   gap: 80px;
   display: flex;
   flex-direction: column;
@@ -62,10 +62,15 @@
       > a:nth-child(2) {
         display: flex;
         justify-content: flex-end;
-        background-image: url("../../assets/img/Secbutton.png");
-        background-repeat: no-repeat;
+        color: #89bcd9;
+        font-weight: 400;
+        font-family: "JosefinSans";
+        font-size: 18px;
+        padding: 15px;
+        border: 1px solid #89bcd9;
+        border-radius: 30px;
         &:hover {
-          background-image: url("../../assets/img/hover.png");
+          background-color: #3f454a;
         }
         @media (max-width: 1031px) {
           justify-content: center;

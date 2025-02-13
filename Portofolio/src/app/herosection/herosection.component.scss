@@ -22,13 +22,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 37rem;
-    height: 39rem;
+    width: 38rem;
+    height: 40rem;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
-    border-radius: 40%;
+    border-radius: 50%;
     @media (max-width: 800px) {
       width: 80vw;
       height: unset;

@@ -1,5 +1,10 @@
-<div class="myskill-section">
+<div class="myskill-section" id="Skills">
+  @if(isgerman.isgerman){
+  <div><h1>Meine Fähigkeiten</h1></div>
+  }@else {
   <div><h1>My Skill</h1></div>
+  }
+
   <div>
     <div>
       <img src="assets/img/skillicons/Angular.png" alt="" /><img
@@ -19,6 +24,20 @@
         alt=""
       />
     </div>
+    @if(isgerman.isgerman){
+    <div>
+      <h3>Ich lerne derzeit</h3>
+      <div>
+        <img src="assets/img/skillicons/React.png" alt="" />
+        <img src="assets/img/skillicons/VueJs.png" alt="" />
+      </div>
+      <span>
+        Motiviert zu bleiben, um meine IT-Fähigkeiten zu erweitern, erfordert
+        einen strategischen Ansatz, eine neugierige Denkweise und ein Engagement
+        für lebenslanges Lernen.
+      </span>
+    </div>
+    } @else {
     <div>
       <h3>I am currently learning</h3>
       <div>
@@ -32,5 +51,7 @@
         a curious mindset, and a commitment to lifelong learning.</span
       >
     </div>
+
+    }
   </div>
 </div>
