@@ -33,7 +33,7 @@ export class ContactsectionComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) {
+    if (ngForm.submitted && ngForm.form.valid && this.checked) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
