@@ -12,6 +12,7 @@
   }
   @media (max-width: 1132px) {
     flex-direction: column;
+    width: 87%;
   }
   > div:nth-child(1) {
     display: flex;
@@ -35,7 +36,6 @@
       }
     }
   }
-
   > div:nth-child(1) {
     > div:nth-child(2) {
       min-width: 851px;
@@ -76,6 +76,7 @@
             width: 390px;
             @media (max-width: 445px) {
               text-align: center;
+              width: 100%;
             }
           }
         }
@@ -230,6 +231,7 @@
           }
           @media (max-width: 896px) {
             max-width: 419px;
+            width: 58%;
           }
         }
       }
@@ -255,4 +257,7 @@
 
 .error {
   color: red;
+  @media (max-width: 320px) {
+    width: calc(100% - 52px);
+  }
 }

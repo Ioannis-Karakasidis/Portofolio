@@ -1,77 +1,87 @@
 <div class="myprojects-section" id="Projects">
-  <div><h2>My Projects</h2></div>
   <div>
+    <div><h2>My Projects</h2></div>
     <div>
       <div>
-        <div [ngClass]="{ active: activeProject === 'DABubble' }">
-          <button (click)="showactiveclass($event, 'DABubble')">
-            1. DA Bubble
-          </button>
-        </div>
-        <div [ngClass]="{ active: activeProject === 'ElPocoLoco' }">
-          <button (click)="showactiveclass($event, 'ElPocoLoco')">
-            2. El Poco Loco
-          </button>
-        </div>
-        <div [ngClass]="{ active: activeProject === 'Join' }">
-          <button (click)="showactiveclass($event, 'Join')">3. Join</button>
-        </div>
-      </div>
-      <div>
-        <div
-          *ngIf="information.information[activeProject]"
-          class="project-details"
-        >
-          <div>
-            <div
-              *ngFor="
-                let section of information.information[activeProject].details
-              "
-            >
-              <div>
-                <img src="assets/img/Ellipse 8.png" alt="" />
-                <h2 class="title">
-                  {{ section.title[isgerman.isgerman ? "de" : "en"] }}
-                </h2>
-              </div>
-              <div>
-                <span class="text">{{
-                  section.description[isgerman.isgerman ? "de" : "en"]
-                }}</span>
-              </div>
-            </div>
+        <div>
+          <div [ngClass]="{ active: activeProject === 'DABubble' }">
+            <button (click)="showactiveclass($event, 'DABubble')">
+              1. DA Bubble
+            </button>
           </div>
-          <div>
-            <div class="smalltext">
-              <p class="title">Technologies<span class="mobileview">:</span></p>
-              <p class="mobileview">
-                {{ information.information[activeProject].technologies }}
-              </p>
-            </div>
-
+          <div [ngClass]="{ active: activeProject === 'ElPocoLoco' }">
+            <button (click)="showactiveclass($event, 'ElPocoLoco')">
+              2. El Poco Loco
+            </button>
+          </div>
+          <div [ngClass]="{ active: activeProject === 'Join' }">
+            <button (click)="showactiveclass($event, 'Join')">3. Join</button>
+          </div>
+        </div>
+        <div>
+          <div
+            *ngIf="information.information[activeProject]"
+            class="project-details"
+          >
             <div>
               <div
                 *ngFor="
-                  let icon of information.information[activeProject]
-                    .technologies
+                  let section of information.information[activeProject].details
                 "
               >
-                <img src="assets/img/skillicons/{{ icon }}.png" alt="" />
+                <div>
+                  <img src="assets/img/Ellipse 8.png" alt="" />
+                  <h2 class="title">
+                    {{ section.title[isgerman.isgerman ? "de" : "en"] }}
+                  </h2>
+                </div>
+                <div>
+                  <span class="text">{{
+                    section.description[isgerman.isgerman ? "de" : "en"]
+                  }}</span>
+                </div>
               </div>
             </div>
             <div>
-              <img
-                class="preview"
-                src="{{ information.information[activeProject].preview }}"
-                alt=""
-              />
+              <div class="smalltext">
+                <p class="title">
+                  Technologies<span class="mobileview">:</span>
+                </p>
+                <p class="mobileview">
+                  {{ information.information[activeProject].technologies }}
+                </p>
+              </div>
+
+              <div>
+                <div
+                  *ngFor="
+                    let icon of information.information[activeProject]
+                      .technologies
+                  "
+                >
+                  <img src="assets/img/skillicons/{{ icon }}.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <img
+                  class="preview"
+                  src="{{ information.information[activeProject].preview }}"
+                  alt=""
+                />
+              </div>
+              <div>
+                <button class="text">Live Test</button
+                ><a href="https://github.com/Ioannis-Karakasidis" class="text"
+                  >GitHub</a
+                >
+              </div>
             </div>
-            <div>
-              <button class="text">Live Test</button
-              ><a href="https://github.com/Ioannis-Karakasidis" class="text"
-                >GitHub</a
-              >
-            </div>
+          </div>
+          <div class="mobilegit">
+            <button class="text">Live Test</button
+            ><a href="https://github.com/Ioannis-Karakasidis" class="text"
+              >GitHub</a
+            >
           </div>
         </div>
       </div>
