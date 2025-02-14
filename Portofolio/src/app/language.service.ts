@@ -20,22 +20,28 @@ export class LanguageService {
         {
           title: { en: 'About the project', de: 'Über das Projekt' },
           description: {
-            en: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-            de: 'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+            en: 'A business chat client designed for professional communication, offering features similar to Discord, WhatsApp, and Slack, but tailored for workplace collaboration.',
+            de: 'Ein Business-Chat-Client für professionelle Kommunikation, mit Funktionen ähnlich wie Discord, WhatsApp und Slack, aber speziell für die Zusammenarbeit im Arbeitsumfeld optimiert.',
           },
         },
         {
-          title: { en: 'How I have organised my work process', de: 'Wie ich meinen Arbeitsprozess organisiert habe' },
+          title: {
+            en: 'Features and Technologies',
+            de: 'Funktionen und Technologien',
+          },
           description: {
-            en: 'Posuere pretium arcu sed senectus felis acmau ris. Dui eget dict um. Desuere pretium arcu set senectus felis ac ma sed senectus felis acmatgh uris. Dui eget dicdah ugihighos ökegh tumosust ere.',
-            de: 'Posuere pretium arcu sed senectus felis acmau ris. Dui eget dict um. Desuere pretium arcu set senectus felis ac ma sed senectus felis acmatgh uris. Dui eget dicdah ugihighos ökegh tumosust ere.',
+            en: 'Developed using modern web technologies, the platform includes real-time messaging, user authentication, file sharing, and role-based access control.',
+            de: 'Entwickelt mit modernen Web-Technologien, bietet die Plattform Echtzeit-Messaging, Benutzer-Authentifizierung, Dateifreigabe und rollenbasierte Zugriffskontrolle.',
           },
         },
         {
-          title: { en: 'My group work experience', de: 'Meine Gruppenerfahrung' },
+          title: {
+            en: 'My contribution to the project',
+            de: 'Mein Beitrag zum Projekt',
+          },
           description: {
-            en: 'As part of a 3-person team in a 5-week project, my primary role involved implementing the authentication features and managing interactions on the board page.',
-            de: 'Als Teil eines 3-Personen-Teams in einem 5-wöchigen Projekt bestand meine Hauptaufgabe darin, die Authentifizierungsfunktionen zu implementieren und die Interaktionen auf der Board-Seite zu verwalten.',
+            en: 'I focused on implementing the front-end interface, optimizing real-time chat interactions, and ensuring a seamless user experience across different devices.',
+            de: 'Ich habe mich auf die Implementierung der Frontend-Oberfläche konzentriert, die Optimierung der Echtzeit-Chat-Interaktionen übernommen und für eine nahtlose Benutzererfahrung auf verschiedenen Geräten gesorgt.',
           },
         },
       ],
@@ -48,22 +54,25 @@ export class LanguageService {
         {
           title: { en: 'About the project', de: 'Über das Projekt' },
           description: {
-            en: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-            de: 'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+            en: 'A Jump-and-Run game that brings joy to players of all ages. You take on the role of the hero, controlling the game mechanics and logic while applying advanced object-oriented programming concepts.',
+            de: 'Ein Jump-and-Run-Spiel, das Spieler jeden Alters begeistert. Du bist der Held hinter der Action und steuerst die Spiellogik, während du fortgeschrittene objektorientierte Programmierkonzepte anwendest.',
           },
         },
         {
-          title: { en: 'How I have organised my work process', de: 'Wie ich meinen Arbeitsprozess organisiert habe' },
+          title: {
+            en: 'How I have organised my work process',
+            de: 'Wie ich meinen Arbeitsprozess organisiert habe',
+          },
           description: {
-            en: 'Posuere pretium arcu sed senectus felis acmau ris. Dui eget dict um. Desuere pretium arcu set senectus felis ac ma sed senectus felis acmatgh uris. Dui eget dicdah ugihighos ökegh tumosust ere.',
-            de: 'Posuere pretium arcu sed senectus felis acmau ris. Dui eget dict um. Desuere pretium arcu set senectus felis ac ma sed senectus felis acmatgh uris. Dui eget dicdah ugihighos ökegh tumosust ere.',
+            en: 'I structured my development process by defining core gameplay mechanics, setting up an object-oriented architecture, and iterating through prototypes based on feedback.',
+            de: 'Ich habe meinen Entwicklungsprozess organisiert, indem ich die Kernmechaniken des Spiels definiert, eine objektorientierte Architektur aufgebaut und Prototypen basierend auf Feedback iteriert habe.',
           },
         },
         {
-          title: { en: '', de: '' },
+          title: { en: 'My role in the project', de: 'Meine Rolle im Projekt' },
           description: {
-            en: 'As part of a 3-person team in a 5-week project, my primary role involved implementing the authentication features and managing interactions on the board page.',
-            de: 'Als Teil eines 3-Personen-Teams in einem 5-wöchigen Projekt bestand meine Hauptaufgabe darin, die Authentifizierungsfunktionen zu implementieren und die Interaktionen auf der Board-Seite zu verwalten.',
+            en: 'I was responsible for implementing the character controls, collision detection, and game physics. Additionally, I optimized performance and ensured smooth animations for an engaging player experience.',
+            de: 'Ich war verantwortlich für die Implementierung der Charaktersteuerung, Kollisionsabfrage und Spielphysik. Zudem habe ich die Performance optimiert und flüssige Animationen für ein fesselndes Spielerlebnis sichergestellt.',
           },
         },
       ],
@@ -76,22 +85,25 @@ export class LanguageService {
         {
           title: { en: 'About the project', de: 'Über das Projekt' },
           description: {
-            en: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-            de: 'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+            en: 'Together with other participants from the training program, you develop a web app using HTML, CSS, JavaScript, Git, and Firebase. The goal is to create a project management tool to visualize task statuses and responsibilities.',
+            de: 'Zusammen mit anderen Teilnehmern aus der Weiterbildung baust du eine Web-App mit HTML, CSS, JavaScript, Git und Firebase. Ziel ist es, ein Projektmanagement-Tool zu erstellen, um den Status und die Verantwortlichkeiten von Aufgaben zu visualisieren.',
           },
         },
         {
-          title: { en: 'How I have organised my work process', de: 'Wie ich meinen Arbeitsprozess organisiert habe' },
+          title: {
+            en: 'How I have organised my work process',
+            de: 'Wie ich meinen Arbeitsprozess organisiert habe',
+          },
           description: {
-            en: 'Posuere pretium arcu sed senectus felis acmau ris. Dui eget dict um. Desuere pretium arcu set senectus felis ac ma sed senectus felis acmatgh uris. Dui eget dicdah ugihighos ökegh tumosust ere.',
-            de: 'Posuere pretium arcu sed senectus felis acmau ris. Dui eget dict um. Desuere pretium arcu set senectus felis ac ma sed senectus felis acmatgh uris. Dui eget dicdah ugihighos ökegh tumosust ere.',
+            en: 'I structured my workflow by breaking tasks into milestones, ensuring smooth collaboration through Git version control, and using Firebase for real-time database management.',
+            de: 'Ich habe meinen Arbeitsprozess organisiert, indem ich Aufgaben in Meilensteine unterteilt, eine reibungslose Zusammenarbeit über Git-Versionierung sichergestellt und Firebase für das Echtzeit-Datenbankmanagement genutzt habe.',
           },
         },
         {
-          title: { en: '', de: '' },
+          title: { en: 'My role in the project', de: 'Meine Rolle im Projekt' },
           description: {
-            en: 'As part of a 3-person team in a 5-week project, my primary role involved implementing the authentication features and managing interactions on the board page.',
-            de: 'Als Teil eines 3-Personen-Teams in einem 5-wöchigen Projekt bestand meine Hauptaufgabe darin, die Authentifizierungsfunktionen zu implementieren und die Interaktionen auf der Board-Seite zu verwalten.',
+            en: 'My primary role involved implementing the authentication system, managing task interactions, and ensuring a responsive user interface for an intuitive experience.',
+            de: 'Meine Hauptaufgabe bestand darin, das Authentifizierungssystem zu implementieren, die Aufgabeninteraktionen zu verwalten und eine responsive Benutzeroberfläche für eine intuitive Nutzung zu gewährleisten.',
           },
         },
       ],

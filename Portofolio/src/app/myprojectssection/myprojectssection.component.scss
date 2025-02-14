@@ -99,6 +99,7 @@
                 align-items: center;
                 @media (max-width: 445px) {
                   justify-content: space-evenly;
+                  width: 100%;
                 }
               }
               > div:nth-child(2) {
@@ -205,6 +206,9 @@
               width: 100%;
               display: flex;
               justify-content: space-evenly;
+              @media (max-width: 450px) {
+                display: none;
+              }
               @media (max-width: 445px) {
                 align-items: center;
                 flex-direction: column;
