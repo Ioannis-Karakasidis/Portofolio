@@ -2,11 +2,11 @@
   <div class="d-none">
     <app-headerlogo [path]="path"></app-headerlogo
     ><button (click)="toggleImage()">
-      <img src="assets/img/menu.png" alt="" />
+      <img src="../../assets/img/menu.png" alt="" />
     </button>
   </div>
   <div>
-    <img *ngIf="showImage" src="assets/img/Bild1.png" alt="" />
+    <img *ngIf="showImage" src="../../assets/img/Bild1.png" alt="" />
     <div *ngIf="!showImage" class="boxlinkss">
       <a class="boxlinks" href="#why-me">{{
         Isgerman ? "Warum ich" : "Why me"
@@ -37,7 +37,7 @@
       </div>
       <div>
         <div>
-          <a href="#why-me"><img src="assets/img/Arrow Down.png" alt="" /></a>
+          <a href="#why-me"><img src="../../assets/img/Arrow Down.png" alt="" /></a>
         </div>
       </div>
     </div>

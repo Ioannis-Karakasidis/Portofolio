@@ -13,7 +13,7 @@ export class LanguageService {
 
   information = {
     DABubble: {
-      preview: 'assets/projectpreviews/Screenshot project.png',
+      preview: '../../assets/projectpreviews/Screenshot project.png',
       duration: '2 months',
       technologies: ['Angular', 'TypeScript', 'Firebase'],
       details: [
@@ -41,7 +41,7 @@ export class LanguageService {
       ],
     },
     ElPocoLoco: {
-      preview: 'assets/projectpreviews/ElPocoLocopreview.png',
+      preview: '../../assets/projectpreviews/ElPocoLocopreview.png',
       duration: '2 months',
       technologies: ['HTML', 'Javascript', 'CSS'],
       details: [
@@ -69,7 +69,7 @@ export class LanguageService {
       ],
     },
     Join: {
-      preview: 'assets/projectpreviews/Joinpreview.png',
+      preview: '../../assets/projectpreviews/Joinpreview.png',
       duration: '2 months',
       technologies: ['HTML', 'Javascript', 'CSS'],
       details: [

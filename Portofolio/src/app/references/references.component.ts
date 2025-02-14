@@ -22,6 +22,7 @@ export class ReferencesComponent {
       project: 'Join',
       description:
         'Ioannis was a very reliable team member. What I particularly appreciated was how he always brought new ideas and quickly found solutions. Whenever tasks were assigned to him, he completed them reliably. Working with him was highly productive.',
+      link: 'https://www.linkedin.com/in/tarik-sabanovic-70410134b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       title: 'Maik Joe Sedlmaier',
@@ -42,6 +43,7 @@ export class ReferencesComponent {
       project: 'Join',
       description:
         'Ioannis war ein sehr zuverlässiges Teammitglied. Besonders geschätzt habe ich, wie er immer neue Ideen einbrachte und schnell Lösungen fand. Wann immer Aufgaben ihm zugewiesen wurden, erledigte er sie zuverlässig. Die Zusammenarbeit mit ihm war sehr produktiv.',
+      link: 'https://www.linkedin.com/in/tarik-sabanovic-70410134b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
     {
       title: 'Maik Joe Sedlmaier',

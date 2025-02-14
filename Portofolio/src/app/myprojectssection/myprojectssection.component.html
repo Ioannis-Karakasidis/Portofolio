@@ -1,4 +1,4 @@
-<div class="myprojects-section" id="Projects">
+<div class="myprojects-section">
   <div><h2>My Projects</h2></div>
   <div>
     <div>
@@ -18,59 +18,39 @@
         </div>
       </div>
       <div>
-        <div
-          *ngIf="information.information[activeProject]"
-          class="project-details"
-        >
+        <div *ngIf="information[activeProject]" class="1">
           <div>
-            <div
-              *ngFor="
-                let section of information.information[activeProject].details
-              "
-            >
+            <div *ngFor="let section of information[activeProject].details">
               <div>
-                <img src="assets/img/Ellipse 8.png" alt="" />
-                <h2 class="title">
-                  {{ section.title[isgerman.isgerman ? "de" : "en"] }}
-                </h2>
+                <img src="../../assets/img/Ellipse 8.png" alt="" />
+                <h2 class="title">{{ section.title }}</h2>
               </div>
               <div>
-                <span class="text">{{
-                  section.description[isgerman.isgerman ? "de" : "en"]
-                }}</span>
+                <span class="text">{{ section.description }}</span>
               </div>
             </div>
           </div>
           <div>
-            <div class="smalltext">
-              <p class="title">Technologies<span class="mobileview">:</span></p>
-              <p class="mobileview">
-                {{ information.information[activeProject].technologies }}
-              </p>
+            <div>
+              <p class="title">Technologies</p>
+              <p class="mobileview">{{ information[activeProject].technologies }}</p>
             </div>
 
             <div>
-              <div
-                *ngFor="
-                  let icon of information.information[activeProject]
-                    .technologies
-                "
-              >
-                <img src="assets/img/skillicons/{{ icon }}.png" alt="" />
+              <div *ngFor="let icon of information[activeProject].technologies">
+                <img src="../../assets/img/skillicons/{{ icon }}.png" alt="" />
               </div>
             </div>
             <div>
               <img
                 class="preview"
-                src="{{ information.information[activeProject].preview }}"
+                src="{{ information[activeProject].preview }}"
                 alt=""
               />
             </div>
             <div>
               <button class="text">Live Test</button
-              ><a href="https://github.com/Ioannis-Karakasidis" class="text"
-                >GitHub</a
-              >
+              ><a href="" class="text">GitHub</a>
             </div>
           </div>
         </div>

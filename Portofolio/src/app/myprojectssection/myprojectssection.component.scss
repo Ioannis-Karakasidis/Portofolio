@@ -82,6 +82,9 @@
           }
           > div:nth-child(1) {
             min-height: 114px;
+            gap: 25px;
+            display: flex;
+            flex-direction: column;
             @media (max-width: 320px) {
               gap: 25px;
               display: flex;
@@ -278,7 +281,4 @@
   font-weight: 400;
   font-size: 18px;
   color: #f8f5ec;
-  @media (max-width: 445px) {
-    width: 250px;
-  }
 }
