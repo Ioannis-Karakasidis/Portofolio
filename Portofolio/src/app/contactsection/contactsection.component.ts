@@ -7,16 +7,16 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contactsection',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contactsection.component.html',
   styleUrl: './contactsection.component.scss',
 })
 export class ContactsectionComponent {
-  width = '85%'
+  Checked = false;
+  width = '85%';
   http = inject(HttpClient);
   Email: string = 'gianniskarakasidhs@hotmail.com';
   isgerman = inject(LanguageService);
-  @ViewChild('checked') checked!: ElementRef;
   contactData = {
     name: '',
     email: '',
@@ -35,7 +35,7 @@ export class ContactsectionComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && this.checked) {
+    if (ngForm.submitted && ngForm.form.valid && this.Checked) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -45,20 +45,20 @@ export class ContactsectionComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            ngForm.reset();
+
+            console.info('send post complete');
+          },
         });
-    } else if (ngForm.submitted && ngForm.form.valid) {
-      ngForm.resetForm();
     }
   }
 
   changepic() {
-    const imgElement = this.checked.nativeElement;
-    const currentSrc = imgElement.src.split('/').pop();
-    if (currentSrc !== 'Checkboxchecked.png') {
-      imgElement.src = '../../assets/img/Checkboxchecked.png';
+    if (this.Checked === false) {
+      this.Checked = true;
     } else {
-      imgElement.src = '../../assets/img/Checkboxunchecked.png';
+      this.Checked = false;
     }
   }
 }

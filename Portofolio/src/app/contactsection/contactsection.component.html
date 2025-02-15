@@ -172,10 +172,23 @@
         <div>
           <button (click)="changepic()" type="button">
             <img
+              *ngIf="Checked"
+              #checked
+              src="../../assets/img/Checkboxchecked.png"
+              alt=""
+              width="24"
+              height="24"
+            />
+            <img
+              *ngIf="!Checked"
               #checked
               src="../../assets/img/Checkboxunchecked.png"
               alt=""
-            /></button
+              width="24"
+              height="24"
+            />
+          </button>
+
           ><span>
             I've read the <a href="">privacy policy</a>and agree to the
             processing of my data as outlined</span
