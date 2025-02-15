@@ -2,15 +2,17 @@ import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../language.service';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contactsection',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './contactsection.component.html',
   styleUrl: './contactsection.component.scss',
 })
 export class ContactsectionComponent {
+  width = '85%'
   http = inject(HttpClient);
   Email: string = 'gianniskarakasidhs@hotmail.com';
   isgerman = inject(LanguageService);

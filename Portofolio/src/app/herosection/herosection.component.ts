@@ -1,7 +1,8 @@
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, Input, ViewChild } from '@angular/core';
 import { HeaderlogoComponent } from '../headerlogo/headerlogo.component';
 import { ContacticonsComponent } from '../contacticons/contacticons.component';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-herosection',
@@ -12,12 +13,11 @@ import { CommonModule } from '@angular/common';
 })
 export class HerosectionComponent {
   path = 'assets/img/Vector 29-1.png';
-  @Input() Isgerman: boolean = false;
   @ViewChild('imageprofile', { static: true })
   image!: ElementRef<HTMLImageElement>;
   @ViewChild('imagebox', { static: true })
   imagebox!: ElementRef<HTMLDivElement>;
-
+  Isgerman = inject(LanguageService)
   showImage: boolean = true;
 
   toggleImage() {

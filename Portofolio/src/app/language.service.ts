@@ -14,6 +14,7 @@ export class LanguageService {
   information = {
     DABubble: {
       link: '',
+      Github: '',
       preview: '../../assets/projectpreviews/Screenshot project.png',
       duration: '2 months',
       technologies: ['Angular', 'TypeScript', 'Firebase'],
@@ -50,6 +51,8 @@ export class LanguageService {
     ElPocoLoco: {
       link: 'https://elpocoloco.ioanniskarakasidis.com/index.html',
       preview: '../../assets/projectpreviews/ElPocoLocopreview.png',
+      Github:
+        'https://github.com/Ioannis-Karakasidis/Portofolio/tree/main/El%20Poco%20loco',
       duration: '2 months',
       technologies: ['HTML', 'Javascript', 'CSS'],
       details: [
@@ -82,6 +85,8 @@ export class LanguageService {
     Join: {
       link: 'https://join.ioanniskarakasidis.com/index.html',
       preview: '../../assets/projectpreviews/Joinpreview.png',
+      Github:
+        'https://github.com/Ioannis-Karakasidis/Portofolio/tree/main/Join',
       duration: '2 months',
       technologies: ['HTML', 'Javascript', 'CSS'],
       details: [

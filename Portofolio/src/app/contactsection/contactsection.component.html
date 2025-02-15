@@ -1,18 +1,18 @@
 <div class="contact-section" id="Contact">
   @if(isgerman.isgerman){
   <div>
-    <div><h2>Kontaktiere mich</h2></div>
+    <div><h2>Kontaktieren Sie mich</h2></div>
     <div>
       <div>
         <div>
           <span>
-            "Noch unsicher, ob ich die richtige Person für dein Projekt bin? Ich
-            würde mich freuen, die Möglichkeit zu haben, zu besprechen, wie ich
-            beitragen kann. Ich bin leidenschaftlich daran interessiert,
-            benutzerfreundliche, responsive und visuell ansprechende
-            Web-Erlebnisse zu schaffen. Egal, ob du ein konkretes Projekt hast
-            oder einfach nur Möglichkeiten erkunden möchtest – zögere nicht,
-            mich zu kontaktieren!"
+            "Sind Sie sich noch nicht sicher, ob ich die richtige Person für Ihr
+            Projekt bin? Ich würde mich freuen, die Möglichkeit zu haben, zu
+            besprechen, wie ich beitragen kann. Ich bin leidenschaftlich daran
+            interessiert, benutzerfreundliche, reaktionsschnelle und visuell
+            ansprechende Web-Erlebnisse zu schaffen. Egal, ob Sie ein Projekt im
+            Kopf haben oder einfach nur Möglichkeiten erkunden möchten, zögern
+            Sie nicht, sich zu melden!"
           </span>
         </div>
         <div>
@@ -30,36 +30,69 @@
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div>
         <div>
-          <label for="">Dein Name</label>
-          <input [(ngModel)]="contactData.name" name="inputname" type="text" />
+          <label for="">Ihr Name</label>
+          <input
+            [(ngModel)]="contactData.name"
+            name="inputname"
+            type="text"
+            #name="ngModel"
+            required
+          />
+          @if(!email.value && email.touched){
+          <span class="error">*Bitte geben Sie einen Namen ein</span>
+          }
         </div>
         <div>
-          <label for="">Deine E-Mail</label>
+          <label for="">Ihre E-Mail</label>
           <input
             [(ngModel)]="contactData.email"
             name="inputmail"
             type="text"
+            #email="ngModel"
+            required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           />
+          @if(!email.valid && email.touched){
+          <span class="error"
+            >*Bitte geben Sie eine gültige E-Mail-Adresse ein</span
+          >
+          }
         </div>
       </div>
       <div>
-        <label for="">Deine Nachricht</label
-        ><textarea
+        <label for="">Ihre Nachricht</label>
+        <textarea
           [(ngModel)]="contactData.message"
           name="inputmessage"
-          id=""
+          #message="ngModel"
+          minlength="4"
+          required
         ></textarea>
+        @if(!message.valid && message.touched){
+        <span class="error">
+          {{
+            isgerman.isgerman
+              ? "Bitte geben Sie eine Nachricht mit mindestens 4 Wörtern ein."
+              : "Please enter a message with minimum 4 words "
+          }}*
+        </span>
+        }
       </div>
       <div>
-        <button></button
-        ><span
-          >I've read the <a href="">privacy policy</a>and agree to the
-          processing of my data as outlined</span
-        >
+        <div>
+          <button (click)="changepic()" type="button">
+            <img #checked src="../../assets/img/Checkboxunchecked.png" alt="" />
+          </button>
+          <span [ngStyle]="{ width: '85%' }">
+            Ich habe die <a href="">Datenschutzerklärung</a> gelesen und stimme
+            der Verarbeitung meiner Daten wie darin beschrieben zu.
+          </span>
+        </div>
+        <div><input type="submit" value="Absenden" /></div>
       </div>
     </form>
   </div>
+
   } @else {
   <div>
     <div><h2>Contact me</h2></div>
@@ -126,7 +159,13 @@
           required
         ></textarea>
         @if(!message.valid && message.touched){
-        <span class="error">*Please enter a message with minimum 4 words</span>
+        <span class="error"
+          >{{
+            isgerman.isgerman
+              ? "Bitte geben Sie eine Nachricht mit mindestens 4 Wörtern ein."
+              : "Please enter a message with minimum 4 words "
+          }}*</span
+        >
         }
       </div>
       <div>
@@ -137,8 +176,8 @@
               src="../../assets/img/Checkboxunchecked.png"
               alt=""
             /></button
-          ><span
-            >I've read the <a href="">privacy policy</a>and agree to the
+          ><span>
+            I've read the <a href="">privacy policy</a>and agree to the
             processing of my data as outlined</span
           >
         </div>

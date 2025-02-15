@@ -10,7 +10,6 @@ import { LanguageService } from '../language.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Output() Isgerman = new EventEmitter<boolean>();
   languageService = inject(LanguageService);
   changetogerman() {
     this.languageService.setLanguage(true);

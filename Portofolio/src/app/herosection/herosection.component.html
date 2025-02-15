@@ -9,16 +9,16 @@
     <img *ngIf="showImage" src="../../assets/img/Bild1.png" alt="" />
     <div *ngIf="!showImage" class="boxlinkss">
       <a class="boxlinks" href="#why-me">{{
-        Isgerman ? "Warum ich" : "Why me"
+        Isgerman.isgerman ? "Warum ich" : "Why me"
       }}</a>
       <a class="boxlinks" href="#Skills">{{
-        Isgerman ? "Fähigkeiten" : "Skills"
+        Isgerman.isgerman ? "Fähigkeiten" : "Skills"
       }}</a>
       <a class="boxlinks" href="#Projects">{{
-        Isgerman ? "Projekte" : "Projects"
+        Isgerman.isgerman ? "Projekte" : "Projects"
       }}</a>
       <a class="boxlinks" href="#Contact">{{
-        Isgerman ? "Kontakt" : "Contact"
+        Isgerman.isgerman ? "Kontakt" : "Contact"
       }}</a>
     </div>
   </div>
@@ -29,7 +29,7 @@
         <app-headerlogo [path]="path"></app-headerlogo>
 
         <span>Ioannis Karakasidis</span>
-        @if(Isgerman) {
+        @if(Isgerman.isgerman) {
         <span>Frontend Entwickler </span>
         }@else {
         <span>FRONTEND DEVELOPER </span>
@@ -37,7 +37,9 @@
       </div>
       <div>
         <div>
-          <a href="#why-me"><img src="../../assets/img/Arrow Down.png" alt="" /></a>
+          <a href="#why-me"
+            ><img src="../../assets/img/Arrow Down.png" alt=""
+          /></a>
         </div>
       </div>
     </div>

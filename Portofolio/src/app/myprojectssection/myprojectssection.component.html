@@ -45,7 +45,9 @@
             <div>
               <div class="smalltext">
                 <p class="title">
-                  Technologies<span class="mobileview">:</span>
+                  {{
+                    isgerman.isgerman ? "Technologien" : "Technologies "
+                  }}<span class="mobileview">:</span>
                 </p>
                 <p class="mobileview">
                   {{ information.information[activeProject].technologies }}
@@ -79,7 +81,7 @@
                   href="{{ information.information[activeProject].link }}"
                   >Live Test</a
                 ><a
-                  href="https://github.com/Ioannis-Karakasidis"
+                  href="{{ information.information[activeProject].Github }}"
                   class="text"
                   target="_blank"
                   >GitHub</a
@@ -92,9 +94,11 @@
               class="text"
               target="_blank"
               href="{{ information.information[activeProject].link }}"
-              >Live Test</a
+              >{{
+                isgerman.isgerman ? "Technologien" : "Live Test "
+              }}</a
             ><a
-              href="https://github.com/Ioannis-Karakasidis"
+              href="{{ information.information[activeProject].Github }}"
               class="text"
               target="_blank"
               >GitHub</a
