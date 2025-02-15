@@ -22,7 +22,7 @@ export class ContactsectionComponent {
   };
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://ioanniskarakasidis.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

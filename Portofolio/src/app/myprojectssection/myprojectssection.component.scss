@@ -225,7 +225,7 @@
                   flex-direction: column;
                   gap: 10px;
                 }
-                > button:nth-child(1) {
+                > a:nth-child(1) {
                   background: none;
                   border: none;
                   background-color: #89bcd9;
@@ -233,6 +233,7 @@
                   padding: 13px 30px 13px 30px;
                   border-radius: 30px;
                   color: #2d383f;
+                  cursor: pointer;
                 }
                 > a:nth-child(2) {
                   background: none;
@@ -240,6 +241,7 @@
                   color: #89bcd9;
                   padding: 13px 30px 13px 30px;
                   border-radius: 30px;
+                  cursor: pointer;
                   @media (max-width: 445px) {
                     padding: 13px 0 13px 0;
                     display: flex;

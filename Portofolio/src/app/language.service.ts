@@ -13,6 +13,7 @@ export class LanguageService {
 
   information = {
     DABubble: {
+      link: '',
       preview: '../../assets/projectpreviews/Screenshot project.png',
       duration: '2 months',
       technologies: ['Angular', 'TypeScript', 'Firebase'],
@@ -47,6 +48,7 @@ export class LanguageService {
       ],
     },
     ElPocoLoco: {
+      link: 'https://elpocoloco.ioanniskarakasidis.com/index.html',
       preview: '../../assets/projectpreviews/ElPocoLocopreview.png',
       duration: '2 months',
       technologies: ['HTML', 'Javascript', 'CSS'],
@@ -78,6 +80,7 @@ export class LanguageService {
       ],
     },
     Join: {
+      link: 'https://join.ioanniskarakasidis.com/index.html',
       preview: '../../assets/projectpreviews/Joinpreview.png',
       duration: '2 months',
       technologies: ['HTML', 'Javascript', 'CSS'],
