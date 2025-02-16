@@ -7,8 +7,9 @@
   align-items: center;
   gap: 48px;
   padding: 150px 0 150px 0;
-  @media (max-width: 320px) {
+  @media (max-width: 400px) {
     height: unset;
+    padding: 0 0 50px 0;
   }
   @media (max-width: 1132px) {
     flex-direction: column;
@@ -27,6 +28,9 @@
       text-align: center;
       @media (max-width: 320px) {
         max-width: 253px;
+      }
+      @media (max-width: 500px) {
+        height: unset;
       }
       > h2:nth-child(1) {
         font-family: "Anta-Regular";

@@ -8,6 +8,7 @@
   @media (max-width: 960px) {
     flex-direction: column;
     padding: unset;
+    gap: 32px;
   }
   > div:nth-child(1) {
     > h1:nth-child(1) {

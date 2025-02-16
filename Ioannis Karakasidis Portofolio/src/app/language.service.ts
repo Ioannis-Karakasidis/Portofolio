@@ -94,7 +94,7 @@ export class LanguageService {
       preview: '../../assets/projectpreviews/Screenshot project.png',
       Github: '',
       duration: '',
-      technologies: ['HTML', 'Javascript', 'CSS'],
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', ],
       details: [
         {
           title: { en: 'About the project', de: 'Über das Projekt' },
