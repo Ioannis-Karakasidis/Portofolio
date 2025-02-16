@@ -1,9 +1,19 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: #89bcd9;
-  font-family: "JosefinSans";
+  font-family: "JosefinSans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #262e34;
+  display: flex;
+  flex-direction: column;
 }
 
 app-header {
@@ -13,7 +23,7 @@ app-header {
 }
 
 .text {
-  font-family: "JosefinSans";
+  font-family: "JosefinSans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #f8f5ec;
@@ -22,18 +32,28 @@ app-header {
 div {
   display: flex;
   justify-content: center;
+  flex: 1;
   margin: 10.5px 0 13px 0;
-  > div:nth-child(1) {
-    max-width: 1920px;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  overflow-wrap: break-word;
+  padding: 0 10px;
+}
 
-  > a {
-    width: fit-content;
+div > div:nth-child(1) {
+  max-width: 1920px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 400px) {
+  div > div:nth-child(1) {
+    height: unset;
   }
+}
+
+a {
+  width: fit-content;
 }
 
 app-footer {
@@ -41,4 +61,6 @@ app-footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 9.5px 0;
+  margin-top: auto;
 }

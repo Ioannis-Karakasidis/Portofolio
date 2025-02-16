@@ -147,9 +147,6 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              > a:nth-child(1) {
-                color: #89bcd9;
-              }
             }
           }
         }
@@ -162,10 +159,13 @@
           }
           > input:nth-child(1) {
             border: 1px solid #f8f5ec;
-            padding: 13px 30px 13px 30px;
+            padding: 13px 30px;
             border-radius: 30px;
             opacity: 50%;
             background: none;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "JosefinSans";
             &:hover {
               background-color: #3f454a;
             }
@@ -264,4 +264,8 @@
   @media (max-width: 320px) {
     width: calc(100% - 52px);
   }
+}
+
+.textcolor {
+  color: #89bcd9;
 }

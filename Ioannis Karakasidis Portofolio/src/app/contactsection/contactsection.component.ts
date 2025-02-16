@@ -3,11 +3,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../language.service';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contactsection',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterLink],
   templateUrl: './contactsection.component.html',
   styleUrl: './contactsection.component.scss',
 })
@@ -48,7 +49,8 @@ export class ContactsectionComponent {
           },
           complete: () => {
             ngForm.reset();
-
+            this.readpolicy = false;
+            this.Checked = false;
             console.info('send post complete');
           },
         });

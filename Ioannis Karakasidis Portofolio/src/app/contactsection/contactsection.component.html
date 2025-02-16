@@ -81,11 +81,23 @@
       <div>
         <div>
           <button (click)="changepic()" type="button">
+            @if(Checked){
+            <img #checked src="../../assets/img/Checkboxchecked.png" alt="" />
+            } @else{
             <img #checked src="../../assets/img/Checkboxunchecked.png" alt="" />
+            }
           </button>
           <span [ngStyle]="{ width: '85%' }">
-            Ich habe die <a href="">Datenschutzerklärung</a> gelesen und stimme
-            der Verarbeitung meiner Daten wie darin beschrieben zu.
+            Ich habe die
+            <a
+              routerLink="/Impressum"
+              routerLinkActive="active"
+              target="_blank"
+              class="textcolor"
+              >Datenschutzerklärung</a
+            >
+            gelesen und stimme der Verarbeitung meiner Daten wie darin
+            beschrieben zu.
           </span>
         </div>
         <div><input type="submit" value="Absenden" /></div>
@@ -184,8 +196,14 @@
           </button>
           <div>
             <span #privacy>
-              I've read the <a href="">privacy policy</a>and agree to the
-              processing of my data as outlined</span
+              I've read the
+              <a
+                routerLink="/Imprint"
+                routerLinkActive="active"
+                target="_blank"
+                class="textcolor"
+                >privacy policy</a
+              >and agree to the processing of my data as outlined</span
             >
             @if(!Checked && readpolicy){
             <span class="error"
@@ -194,7 +212,7 @@
             }
           </div>
         </div>
-        <div><input type="submit" value="Submit" /></div>
+        <div><input type="submit" value="Send" /></div>
       </div>
     </form>
   </div>
