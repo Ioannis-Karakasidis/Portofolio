@@ -166,6 +166,7 @@
             font-size: 18px;
             font-weight: 400;
             font-family: "JosefinSans";
+            color: #f8f5ec;
             &:hover {
               background-color: #3f454a;
             }
@@ -203,6 +204,9 @@
             border-radius: 25px;
             background: none;
             padding: 15px;
+            color: white;
+            font-size: 18px;
+            font-family: "JosefinSans";
             &:focus {
               background-color: #313f48;
             }
@@ -230,6 +234,9 @@
           padding: 15px;
           resize: none;
           height: 146px;
+          color: white;
+          font-size: 18px;
+          font-family: "JosefinSans";
           &:focus {
             background-color: #313f48;
           }

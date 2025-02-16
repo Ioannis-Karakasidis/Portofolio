@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
   @media (max-width: 1280px) {
     flex-direction: column;
     gap: 20px;

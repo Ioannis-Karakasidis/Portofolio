@@ -6,6 +6,17 @@ body {
   color: #262e34;
 }
 
+html {
+  overflow-y: auto; /* Ensures scrolling only appears when needed */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+body {
+  min-height: 100vh; /* Ensures the body fills the screen */
+  margin: 0;
+  padding: 0;
+}
+
 app-header {
   background-color: #89bcd9;
   display: flex;
@@ -22,17 +33,16 @@ app-header {
 div {
   display: flex;
   justify-content: center;
-  margin: 10.5px 0 13px 0;
   overflow-wrap: break-word;
   height: 100%;
   > div:nth-child(1) {
     max-width: 1920px;
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    @media (max-width: 400px) {
-      height: unset;
+    @media (max-width: 1971px) {
+      width: 90%;
     }
   }
 

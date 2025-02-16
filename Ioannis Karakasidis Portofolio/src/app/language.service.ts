@@ -4,11 +4,20 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class LanguageService {
-  constructor() {}
-  isgerman = false;
+  isgerman: boolean;
+
+  constructor() {
+    this.isgerman = this.getLanguageFromLocalStorage();
+  }
 
   setLanguage(value: boolean) {
     this.isgerman = value;
+    localStorage.setItem('isgerman', JSON.stringify(value));
+  }
+
+  private getLanguageFromLocalStorage(): boolean {
+    const storedValue = localStorage.getItem('isgerman');
+    return storedValue ? JSON.parse(storedValue) : false;
   }
 
   information = {

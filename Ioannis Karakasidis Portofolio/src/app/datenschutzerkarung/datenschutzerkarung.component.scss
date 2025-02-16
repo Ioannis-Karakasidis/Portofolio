@@ -1,12 +1,9 @@
-html {
-  overflow-y: auto; /* Ensures scrolling only appears when needed */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
+html,
 body {
-  min-height: 100vh; /* Ensures the body fills the screen */
+  height: 100%;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -17,14 +14,12 @@ body {
   color: #262e34;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 app-header {
   background-color: #89bcd9;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .text {
@@ -42,16 +37,11 @@ div {
   overflow-wrap: break-word;
   padding: 0 10px;
   flex-direction: column;
-  max-width: 1920px;
-  width: 100%;
-  @media (max-width: 1971px) {
-    width: 85%;
-  }
 }
 
 div > div:nth-child(1) {
   max-width: 1920px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   flex: 1;
