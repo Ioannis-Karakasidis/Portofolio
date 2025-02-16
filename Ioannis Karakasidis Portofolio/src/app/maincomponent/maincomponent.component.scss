@@ -1,0 +1,59 @@
+app-header {
+  background-color: #89bcd9;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+app-herosection {
+  background-color: #262e34;
+  display: flex;
+  justify-content: center;
+  padding: 79px 114px 79px 114px;
+  @media (max-width: 400px) {
+    padding: unset;
+  }
+}
+
+app-footer {
+  background-color: #89bcd9;
+  display: flex;
+  justify-content: center;
+}
+
+app-whyme {
+  background-color: #262e34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+app-myskill {
+  background-color: #262e34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+app-references {
+  background-color: #262e34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+app-contactsection {
+  background-color: #262e34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+app-myprojectssection {
+  background-color: #262e34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

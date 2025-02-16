@@ -1,0 +1,208 @@
+<div class="contact-section" id="Contact">
+  @if(isgerman.isgerman){
+  <div>
+    <div><h2>Kontaktieren Sie mich</h2></div>
+    <div>
+      <div>
+        <div>
+          <span>
+            "Sind Sie sich noch nicht sicher, ob ich die richtige Person für Ihr
+            Projekt bin? Ich würde mich freuen, die Möglichkeit zu haben, zu
+            besprechen, wie ich beitragen kann. Ich bin leidenschaftlich daran
+            interessiert, benutzerfreundliche, reaktionsschnelle und visuell
+            ansprechende Web-Erlebnisse zu schaffen. Egal, ob Sie ein Projekt im
+            Kopf haben oder einfach nur Möglichkeiten erkunden möchten, zögern
+            Sie nicht, sich zu melden!"
+          </span>
+        </div>
+        <div>
+          <div>
+            <img src="../../assets/img/mail.png" alt="" />
+            <p>E-Mail: {{ Email }}</p>
+          </div>
+          <div>
+            <img src="../../assets/img/phone.png" alt="" />
+            <p>Tel: 5498 65655656</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+      <div>
+        <div>
+          <label for="">Ihr Name</label>
+          <input
+            [(ngModel)]="contactData.name"
+            name="inputname"
+            type="text"
+            #name="ngModel"
+            required
+          />
+          @if(!email.value && email.touched){
+          <span class="error">*Bitte geben Sie einen Namen ein</span>
+          }
+        </div>
+        <div>
+          <label for="">Ihre E-Mail</label>
+          <input
+            [(ngModel)]="contactData.email"
+            name="inputmail"
+            type="text"
+            #email="ngModel"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          @if(!email.valid && email.touched){
+          <span class="error"
+            >*Bitte geben Sie eine gültige E-Mail-Adresse ein</span
+          >
+          }
+        </div>
+      </div>
+      <div>
+        <label for="">Ihre Nachricht</label>
+        <textarea
+          [(ngModel)]="contactData.message"
+          name="inputmessage"
+          #message="ngModel"
+          minlength="4"
+          required
+        ></textarea>
+        @if(!message.valid && message.touched){
+        <span class="error">
+          {{
+            isgerman.isgerman
+              ? "Bitte geben Sie eine Nachricht mit mindestens 4 Wörtern ein."
+              : "Please enter a message with minimum 4 words "
+          }}*
+        </span>
+        }
+      </div>
+      <div>
+        <div>
+          <button (click)="changepic()" type="button">
+            <img #checked src="../../assets/img/Checkboxunchecked.png" alt="" />
+          </button>
+          <span [ngStyle]="{ width: '85%' }">
+            Ich habe die <a href="">Datenschutzerklärung</a> gelesen und stimme
+            der Verarbeitung meiner Daten wie darin beschrieben zu.
+          </span>
+        </div>
+        <div><input type="submit" value="Absenden" /></div>
+      </div>
+    </form>
+  </div>
+
+  } @else {
+  <div>
+    <div><h2>Contact me</h2></div>
+    <div>
+      <div>
+        <div>
+          <span
+            >"Still not sure if I am the right person for your project? I would
+            love the opportunity to discuss how I can contribute. I am
+            passionate about creating user-friendly, responsive, and visually
+            appealing web experiences. Whether you have a project in mind or
+            just want to explore possibilities, feel free to reach out!</span
+          >
+        </div>
+        <div>
+          <div>
+            <img src="../../assets/img/mail.png" alt="" />
+            <p>E-mail: {{ Email }}</p>
+          </div>
+          <div>
+            <img src="../../assets/img/phone.png" alt="" />
+            <p>Tel: 5498 65655656</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+      <div>
+        <div>
+          <label for="">Your name</label>
+          <input
+            [(ngModel)]="contactData.name"
+            name="inputname"
+            type="text"
+            #name="ngModel"
+            required
+          />
+          @if(!email.value && email.touched){
+          <span class="error">*Please enter a name</span>
+          }
+        </div>
+        <div>
+          <label for="">Your Email</label>
+          <input
+            [(ngModel)]="contactData.email"
+            name="inputmail"
+            type="text"
+            #email="ngModel"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          @if(!email.valid && email.touched){
+          <span class="error">*Please enter a valid E-mail</span>
+          }
+        </div>
+      </div>
+      <div>
+        <label for="">Your Message</label
+        ><textarea
+          [(ngModel)]="contactData.message"
+          name="inputmessage"
+          #message="ngModel"
+          minlength="4"
+          required
+        ></textarea>
+        @if(!message.valid && message.touched){
+        <span class="error">*Please enter a minimum of 4 words message</span>
+        }
+      </div>
+      <div>
+        <div>
+          <button (click)="changepic()" type="button">
+            <img
+              *ngIf="Checked"
+              #checked
+              src="../../assets/img/Checkboxchecked.png"
+              alt=""
+              width="24"
+              height="24"
+            />
+            <img
+              *ngIf="!Checked"
+              #checdked
+              src="../../assets/img/Checkboxunchecked.png"
+              alt=""
+              width="24"
+              height="24"
+            />
+          </button>
+          <div>
+            <span #privacy>
+              I've read the <a href="">privacy policy</a>and agree to the
+              processing of my data as outlined</span
+            >
+            @if(!Checked && readpolicy){
+            <span class="error"
+              >*Please read and accept the privacy policy</span
+            >
+            }
+          </div>
+        </div>
+        <div><input type="submit" value="Submit" /></div>
+      </div>
+    </form>
+  </div>
+  }
+
+  <div>
+    <div>
+      <a href="#profile"><img src="../../assets/img/Arrow Up.png" alt="" /></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="profile-card" id="profile">
+  <div class="d-none">
+    <app-headerlogo [path]="path"></app-headerlogo
+    ><button (click)="toggleImage()">
+      <img src="../../assets/img/menu.png" alt="" />
+    </button>
+  </div>
+  <div>
+    <img *ngIf="showImage" src="../../assets/img/Bild1.png" alt="" />
+    <div *ngIf="!showImage" class="boxlinkss">
+      <a class="boxlinks" href="#why-me">{{
+        Isgerman.isgerman ? "Warum ich" : "Why me"
+      }}</a>
+      <a class="boxlinks" href="#Skills">{{
+        Isgerman.isgerman ? "Fähigkeiten" : "Skills"
+      }}</a>
+      <a class="boxlinks" href="#Projects">{{
+        Isgerman.isgerman ? "Projekte" : "Projects"
+      }}</a>
+      <a class="boxlinks" href="#Contact">{{
+        Isgerman.isgerman ? "Kontakt" : "Contact"
+      }}</a>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <div>
+        <app-headerlogo [path]="path"></app-headerlogo>
+
+        <span>Ioannis Karakasidis</span>
+        @if(Isgerman.isgerman) {
+        <span>Frontend Entwickler </span>
+        }@else {
+        <span>FRONTEND DEVELOPER </span>
+        }
+      </div>
+      <div>
+        <div>
+          <a href="#why-me"
+            ><img src="../../assets/img/Arrow Down.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <app-contacticons
+      [customClass]="'custom-flex'"
+      [path]="path"
+    ></app-contacticons>
+  </div>
+</div>

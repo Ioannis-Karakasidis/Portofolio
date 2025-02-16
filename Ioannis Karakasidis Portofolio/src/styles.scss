@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Anta-Regular";
+  src: url("assets/fonts/Anta-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth !important;
+
+}
+
+a {
+  text-decoration: none;
+  color: #262e34;
+}
+
+.boxlinkss {
+  width: 93px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  >a{
+    color: #262E34;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'JosefinSans';
+  }
+}
+
+.imagesize {
+  height: auto;
+  width: 80%;
+}

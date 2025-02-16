@@ -1,0 +1,108 @@
+.reference-section {
+  max-width: 1250px;
+  width: 100%;
+  height: 479px;
+  gap: 80px;
+  padding: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 1245px) {
+    height: unset;
+  }
+  @media (max-width: 400px) {
+    padding: 100px 0 0 0;
+  }
+
+  > div:nth-child(1) {
+    > h2:nth-child(1) {
+      font-family: "JosefinSans";
+      font-weight: 400px;
+      font-size: 32px;
+      text-align: center;
+      color: #89bcd9;
+    }
+  }
+  > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: 1245px) {
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
+  }
+}
+
+.templatebox {
+  background-image: url("../../assets/img/hoveredicons/Ellipse\ BG\ \(1\).png");
+  background-size: contain;
+  width: 378px;
+  height: 373px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 17px;
+  @media (max-width: 1245px) {
+    width: unset;
+  }
+  > h2:nth-child(1) {
+    font-family: "JosefinSans";
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #f8f5ec;
+  }
+  > div:nth-child(2) {
+    display: flex;
+    gap: 5px;
+    > p:nth-child(1) {
+      font-family: "JosefinSans";
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: #f8f5ec;
+    }
+    > a:nth-child(2) {
+      font-family: "JosefinSans";
+      font-weight: 400;
+      font-size: 18px;
+      color: #89bcd9;
+      text-align: center;
+    }
+  }
+
+  > span:nth-child(3) {
+    width: 292px;
+    font-family: "JosefinSans";
+    font-weight: 400;
+    font-size: 18px;
+    color: #fffdfd;
+    text-align: center;
+    @media (max-width: 400px) {
+      width: 387px;
+      font-size: 17px;
+    }
+  }
+  > a:nth-child(4) {
+    font-family: "JosefinSans";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #89bcd9;
+    text-decoration: underline;
+  }
+}
+
+.templateboxs{
+  display: flex;
+}
+
+.german{
+  width: 331px !important;
+}

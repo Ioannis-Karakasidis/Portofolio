@@ -1,0 +1,29 @@
+<div class="header-box">
+  <app-headerlogo></app-headerlogo>
+  <div>
+    <a href="#why-me">
+      @if (languageService.isgerman) { Warum ich }@else {Why me}</a
+    ><a href="#Skills">
+      @if (languageService.isgerman) { Fähigkeiten}@else {Skills}</a
+    ><a href="#Projects">
+      @if (languageService.isgerman) { Projekte }@else {Projects}</a
+    ><a href="#Contact">
+      @if (languageService.isgerman) { Kontakt }@else {Contact }</a
+    >
+  </div>
+  <div>
+    <button (click)="changetogerman()">
+      @if(!languageService.isgerman){
+      <img src="../../assets/img/DE.png" alt="" />
+      } @else {
+      <img src="../../assets/img/DE (1).png" alt="" />
+      }</button
+    ><button (click)="changetoenglish()">
+      @if(languageService.isgerman){
+      <img src="../../assets/img/EN (1).png" alt="" />
+      }@else {
+      <img src="../../assets/img/EN.png" alt="" />
+      }
+    </button>
+  </div>
+</div>
