@@ -13,11 +13,6 @@ export class ReferencesComponent {
   isgerman = inject(LanguageService);
   reference = [
     {
-      title: '',
-      project: 'DA Bublle',
-      description: '',
-    },
-    {
       title: 'T. Sabanovic',
       project: 'Join',
       description:
@@ -33,11 +28,6 @@ export class ReferencesComponent {
   ];
 
   german = [
-    {
-      title: '',
-      project: 'DA Bubble',
-      description: '',
-    },
     {
       title: 'T. Sabanovic',
       project: 'Join',

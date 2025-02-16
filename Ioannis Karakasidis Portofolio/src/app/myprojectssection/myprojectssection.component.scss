@@ -76,10 +76,11 @@
             max-width: 1920px;
             height: 100%;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             width: 100%;
-            justify-content: space-evenly;
+            justify-content: space-between;
             @media (max-width: 1137px) {
+              align-items: center;
               flex-direction: column-reverse;
               @media (max-width: 445px) {
                 gap: 25px;
@@ -264,7 +265,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  > button:nth-child(1) {
+  > a:nth-child(1) {
     background: none;
     background-color: #89bcd9;
     border: 1px solid #89bcd9;

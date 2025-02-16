@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { LanguageService } from '../language.service';
 
-type ProjectKey = 'DABubble' | 'ElPocoLoco' | 'Join';
+type ProjectKey = 'Join' | 'ElPocoLoco' | 'OngoingProject';
 
 @Component({
   selector: 'app-myprojectssection',
@@ -12,7 +12,7 @@ type ProjectKey = 'DABubble' | 'ElPocoLoco' | 'Join';
   styleUrl: './myprojectssection.component.scss',
 })
 export class MyprojectssectionComponent {
-  activeProject: ProjectKey = 'DABubble';
+  activeProject: ProjectKey = 'ElPocoLoco';
   isgerman = inject(LanguageService);
   information = inject(LanguageService);
   showactiveclass($event: MouseEvent, projectId: string): void {

@@ -21,42 +21,6 @@ export class LanguageService {
   }
 
   information = {
-    DABubble: {
-      link: '',
-      Github: '',
-      preview: '../../assets/projectpreviews/Screenshot project.png',
-      duration: '2 months',
-      technologies: ['Angular', 'TypeScript', 'Firebase'],
-      details: [
-        {
-          title: { en: 'About the project', de: 'Über das Projekt' },
-          description: {
-            en: 'A business chat client designed for professional communication, offering features similar to Discord, WhatsApp, and Slack, but tailored for workplace collaboration.',
-            de: 'Ein Business-Chat-Client für professionelle Kommunikation, mit Funktionen ähnlich wie Discord, WhatsApp und Slack, aber speziell für die Zusammenarbeit im Arbeitsumfeld optimiert.',
-          },
-        },
-        {
-          title: {
-            en: 'Features and Technologies',
-            de: 'Funktionen und Technologien',
-          },
-          description: {
-            en: 'Developed using modern web technologies, the platform includes real-time messaging, user authentication, file sharing, and role-based access control.',
-            de: 'Entwickelt mit modernen Web-Technologien, bietet die Plattform Echtzeit-Messaging, Benutzer-Authentifizierung, Dateifreigabe und rollenbasierte Zugriffskontrolle.',
-          },
-        },
-        {
-          title: {
-            en: 'My contribution to the project',
-            de: 'Mein Beitrag zum Projekt',
-          },
-          description: {
-            en: 'I focused on implementing the front-end interface, optimizing real-time chat interactions, and ensuring a seamless user experience across different devices.',
-            de: 'Ich habe mich auf die Implementierung der Frontend-Oberfläche konzentriert, die Optimierung der Echtzeit-Chat-Interaktionen übernommen und für eine nahtlose Benutzererfahrung auf verschiedenen Geräten gesorgt.',
-          },
-        },
-      ],
-    },
     ElPocoLoco: {
       link: 'https://elpocoloco.ioanniskarakasidis.com/index.html',
       preview: '../../assets/projectpreviews/ElPocoLocopreview.png',
@@ -121,6 +85,22 @@ export class LanguageService {
           description: {
             en: 'My primary role involved implementing the authentication system, managing task interactions, and ensuring a responsive user interface for an intuitive experience.',
             de: 'Meine Hauptaufgabe bestand darin, das Authentifizierungssystem zu implementieren, die Aufgabeninteraktionen zu verwalten und eine responsive Benutzeroberfläche für eine intuitive Nutzung zu gewährleisten.',
+          },
+        },
+      ],
+    },
+    OngoingProject: {
+      link: '',
+      preview: '../../assets/projectpreviews/Screenshot project.png',
+      Github: '',
+      duration: '',
+      technologies: ['HTML', 'Javascript', 'CSS'],
+      details: [
+        {
+          title: { en: 'About the project', de: 'Über das Projekt' },
+          description: {
+            en: 'I developed a Slack Clone App that revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. Working on this project helped me enhance my skills in structuring workflows and organizing tasks efficiently.',
+            de: 'Ich habe eine Slack-Klon-App entwickelt, die die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation revolutioniert. Die Arbeit an diesem Projekt half mir, meine Fähigkeiten in der Strukturierung von Arbeitsabläufen und der effizienten Organisation von Aufgaben zu verbessern.',
           },
         },
       ],

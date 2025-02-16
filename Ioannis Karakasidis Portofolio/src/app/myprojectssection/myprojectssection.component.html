@@ -4,18 +4,18 @@
     <div>
       <div>
         <div>
-          <div [ngClass]="{ active: activeProject === 'DABubble' }">
-            <button (click)="showactiveclass($event, 'DABubble')">
-              1. DA Bubble
-            </button>
+          <div [ngClass]="{ active: activeProject === 'Join' }">
+            <button (click)="showactiveclass($event, 'Join')">1. Join</button>
           </div>
           <div [ngClass]="{ active: activeProject === 'ElPocoLoco' }">
             <button (click)="showactiveclass($event, 'ElPocoLoco')">
               2. El Poco Loco
             </button>
           </div>
-          <div [ngClass]="{ active: activeProject === 'Join' }">
-            <button (click)="showactiveclass($event, 'Join')">3. Join</button>
+          <div [ngClass]="{ active: activeProject === 'OngoingProject' }">
+            <button (click)="showactiveclass($event, 'OngoingProject')">
+              3.Ongoing Project
+            </button>
           </div>
         </div>
         <div>
@@ -45,8 +45,7 @@
             <div>
               <div class="smalltext">
                 <p class="title">
-                  {{
-                    isgerman.isgerman ? "Technologien" : "Technologies "
+                  {{ isgerman.isgerman ? "Technologien" : "Technologies "
                   }}<span class="mobileview">:</span>
                 </p>
                 <p class="mobileview">
@@ -75,6 +74,7 @@
                 />
               </div>
               <div>
+                @if(information.information[activeProject].link){
                 <a
                   class="text"
                   target="_blank"
@@ -86,23 +86,24 @@
                   target="_blank"
                   >GitHub</a
                 >
+                }
               </div>
             </div>
           </div>
           <div class="mobilegit">
+            @if(information.information[activeProject].link){
             <a
               class="text"
               target="_blank"
               href="{{ information.information[activeProject].link }}"
-              >{{
-                isgerman.isgerman ? "Technologien" : "Live Test "
-              }}</a
+              >Live Test</a
             ><a
               href="{{ information.information[activeProject].Github }}"
               class="text"
               target="_blank"
               >GitHub</a
             >
+            }
           </div>
         </div>
       </div>
