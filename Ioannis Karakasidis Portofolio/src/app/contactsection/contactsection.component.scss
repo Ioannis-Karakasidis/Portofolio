@@ -276,3 +276,29 @@
 .textcolor {
   color: #89bcd9;
 }
+
+.complete {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+  position: fixed;
+  background: rgb(0, 0, 0, 0.5);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  font-family: "JosefinSans";
+  font-weight: 400;
+  color: #313f48;
+  > div {
+    width: 500px;
+    height: 500px;
+    border-radius: 50% 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

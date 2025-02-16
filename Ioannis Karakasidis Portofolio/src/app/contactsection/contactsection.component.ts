@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../language.service';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
@@ -19,6 +19,8 @@ export class ContactsectionComponent {
   http = inject(HttpClient);
   Email: string = 'gianniskarakasidhs@hotmail.com';
   isgerman = inject(LanguageService);
+  @ViewChild('overlay') overlay!: ElementRef;
+  
   contactData = {
     name: '',
     email: '',
@@ -49,9 +51,13 @@ export class ContactsectionComponent {
           },
           complete: () => {
             ngForm.reset();
+            this.overlay.nativeElement.style.display = 'flex'
+
             this.readpolicy = false;
             this.Checked = false;
-            console.info('send post complete');
+            setTimeout(() => {
+              this.overlay.nativeElement.style.display = 'none'
+            }, 1000);
           },
         });
     }

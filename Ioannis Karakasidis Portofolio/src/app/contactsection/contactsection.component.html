@@ -217,10 +217,16 @@
     </form>
   </div>
   }
-
   <div>
     <div>
       <a href="#profile"><img src="../../assets/img/Arrow Up.png" alt="" /></a>
     </div>
+  </div>
+  <div class="complete" #overlay>
+    @if(isgerman.isgerman){
+    <div><span>Erfolgreich gesendet</span></div>
+    } @else {
+    <div><span> Successfully sent </span></div>
+    }
   </div>
 </div>
