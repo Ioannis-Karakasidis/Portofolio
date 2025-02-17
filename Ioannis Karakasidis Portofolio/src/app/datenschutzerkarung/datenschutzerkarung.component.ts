@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { LanguageService } from '../language.service';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
-import { PrivacypolicyComponent } from '../privacypolicy/privacypolicy.component';
 
 @Component({
   selector: 'app-datenschutzerkarung',
