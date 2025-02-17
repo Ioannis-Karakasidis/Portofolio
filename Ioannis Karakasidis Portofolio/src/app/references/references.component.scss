@@ -102,10 +102,12 @@
   }
 }
 
-.templateboxs{
+.templateboxs {
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.german{
+.german {
   width: 331px !important;
 }

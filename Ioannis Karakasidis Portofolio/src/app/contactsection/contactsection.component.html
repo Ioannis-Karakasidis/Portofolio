@@ -38,7 +38,7 @@
             #name="ngModel"
             required
           />
-          @if(!email.value && email.touched){
+          @if(!name.value && name.touched){
           <span class="error">*Bitte geben Sie einen Namen ein</span>
           }
         </div>
@@ -81,26 +81,43 @@
       <div>
         <div>
           <button (click)="changepic()" type="button">
-            @if(Checked){
-            <img #checked src="../../assets/img/Checkboxchecked.png" alt="" />
-            } @else{
-            <img #checked src="../../assets/img/Checkboxunchecked.png" alt="" />
-            }
+            <img
+              *ngIf="Checked"
+              #checked
+              src="../../assets/img/Checkboxchecked.png"
+              alt=""
+              width="24"
+              height="24"
+            />
+            <img
+              *ngIf="!Checked"
+              #checdked
+              src="../../assets/img/Checkboxunchecked.png"
+              alt=""
+              width="24"
+              height="24"
+            />
           </button>
-          <span [ngStyle]="{ width: '85%' }">
-            Ich habe die
-            <a
-              routerLink="./Datenschutz"
-              routerLinkActive="active"
-              target="_blank"
-              class="textcolor"
-              >Datenschutzerklärung</a
+          <div class="width">
+            <span #privacy>
+              Ich habe die
+              <a
+                routerLink="/Privacypolicy"
+                routerLinkActive="active"
+                target="_blank"
+                class="textcolor"
+                >Datenschutzerklärung </a
+              >gelesen und stimme der Verarbeitung meiner Daten wie darin
+              beschrieben zu.</span
             >
-            gelesen und stimme der Verarbeitung meiner Daten wie darin
-            beschrieben zu.
-          </span>
+            @if(!Checked && readpolicy ){
+            <span class="error"
+              >*Bitte lesen Sie die Datenschutzerklärung und akzeptieren</span
+            >
+            }
+          </div>
         </div>
-        <div><input type="submit" value="Absenden" /></div>
+        <div><input type="submit" value="Send" /></div>
       </div>
     </form>
   </div>
@@ -205,7 +222,7 @@
                 >privacy policy</a
               >and agree to the processing of my data as outlined</span
             >
-            @if(!Checked && readpolicy){
+            @if(!Checked && readpolicy ){
             <span class="error"
               >*Please read and accept the privacy policy</span
             >

@@ -20,7 +20,7 @@ export class ContactsectionComponent {
   Email: string = 'gianniskarakasidhs@hotmail.com';
   isgerman = inject(LanguageService);
   @ViewChild('overlay') overlay!: ElementRef;
-  
+
   contactData = {
     name: '',
     email: '',
@@ -51,12 +51,12 @@ export class ContactsectionComponent {
           },
           complete: () => {
             ngForm.reset();
-            this.overlay.nativeElement.style.display = 'flex'
+            this.overlay.nativeElement.style.display = 'flex';
 
             this.readpolicy = false;
             this.Checked = false;
             setTimeout(() => {
-              this.overlay.nativeElement.style.display = 'none'
+              this.overlay.nativeElement.style.display = 'none';
             }, 1000);
           },
         });
