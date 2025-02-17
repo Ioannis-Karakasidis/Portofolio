@@ -17,6 +17,10 @@ app-herosection {
   }
 }
 
+.draggable-content:active {
+  cursor: grabbing;
+}
+
 app-footer {
   background-color: #89bcd9;
   display: flex;
@@ -29,7 +33,6 @@ app-whyme {
   align-items: center;
   justify-content: center;
   padding: 50px 0 50px 0;
-
 }
 
 app-myskill {
@@ -45,7 +48,6 @@ app-references {
   align-items: center;
   justify-content: center;
   padding: 50px 0 50px 0;
-
 }
 
 app-contactsection {

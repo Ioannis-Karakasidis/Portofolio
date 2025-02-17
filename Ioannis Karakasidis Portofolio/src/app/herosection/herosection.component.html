@@ -6,7 +6,12 @@
     </button>
   </div>
   <div>
-    <img *ngIf="showImage" src="../../assets/img/Bild1.png" alt="" />
+    <img
+      *ngIf="showImage"
+      draggable="false"
+      src="../../assets/img/Bild1.png"
+      alt=""
+    />
     <div *ngIf="!showImage" class="boxlinkss">
       <a class="boxlinks" href="#why-me">{{
         Isgerman.isgerman ? "Warum ich" : "Why me"

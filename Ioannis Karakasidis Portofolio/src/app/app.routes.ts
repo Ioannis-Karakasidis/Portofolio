@@ -11,7 +11,4 @@ export const routes: Routes = [
   { path: 'Impressum', component: ImpressumComponent },
   { path: 'Privacypolicy', component: PrivacypolicyComponent },
   { path: 'Datenschutz', component: DatenschutzerkarungComponent },
-
-
-
 ];
