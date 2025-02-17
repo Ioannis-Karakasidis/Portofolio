@@ -11,7 +11,6 @@
 * {
   margin: 0;
   scroll-behavior: smooth !important;
-
 }
 
 a {
@@ -27,11 +26,24 @@ a {
   justify-content: center;
   gap: 20px;
   align-items: center;
-  >a{
-    color: #262E34;
+  text-align: center;
+  > div:nth-child(5) {
+    max-width: 92px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    > button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      width: fit-content;
+    }
+  }
+  > a {
+    color: #262e34;
     font-weight: 400;
     font-size: 22px;
-    font-family: 'JosefinSans';
+    font-family: "JosefinSans";
   }
 }
 

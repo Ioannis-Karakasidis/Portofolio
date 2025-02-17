@@ -12,11 +12,5 @@ import { HerosectionComponent } from '../herosection/herosection.component';
 })
 export class HeaderComponent {
   languageService = inject(LanguageService);
-  changetogerman() {
-    this.languageService.setLanguage(true);
-  }
-
-  changetoenglish() {
-    this.languageService.setLanguage(false);
-  }
+  
 }

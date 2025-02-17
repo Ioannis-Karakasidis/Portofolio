@@ -20,6 +20,14 @@ export class LanguageService {
     return storedValue ? JSON.parse(storedValue) : false;
   }
 
+  changetogerman() {
+    this.setLanguage(true);
+  }
+
+  changetoenglish() {
+    this.setLanguage(false);
+  }
+
   information = {
     ElPocoLoco: {
       link: 'https://elpocoloco.ioanniskarakasidis.com/index.html',
@@ -94,7 +102,7 @@ export class LanguageService {
       preview: '../../assets/projectpreviews/Screenshot project.png',
       Github: '',
       duration: '',
-      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', ],
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS'],
       details: [
         {
           title: { en: 'About the project', de: 'Über das Projekt' },

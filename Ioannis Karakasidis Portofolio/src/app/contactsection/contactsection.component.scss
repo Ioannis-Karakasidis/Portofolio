@@ -31,6 +31,7 @@
       }
       @media (max-width: 500px) {
         height: unset;
+        overflow-wrap: anywhere;
       }
       > h2:nth-child(1) {
         font-family: "Anta-Regular";
@@ -48,6 +49,8 @@
       }
       @media (max-width: 1132px) {
         height: 100%;
+        display: flex;
+        justify-content: center;
       }
       > div:nth-child(1) {
         display: flex;
@@ -59,7 +62,9 @@
           height: 100%;
           display: flex;
           align-items: center;
-          @media (max-width: 320px) {
+          @media (max-width: 343px) {
+            display: flex;
+            justify-content: center;
             gap: 25px;
           }
         }
