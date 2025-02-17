@@ -268,16 +268,22 @@
         display: flex;
         scroll-behavior: smooth;
       }
-      input:-webkit-autofill {
-        background-color: #3f454a !important;
-        color: white !important;
-        border: 1px solid #89bcd9 !important;
-      }
       &:hover {
         background-color: #3f454a;
       }
     }
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #3f454a inset !important;
+  font-size: 18px !important;
+  font-family: "JosefinSans" !important;
+  font-weight: 800;
+  -webkit-text-fill-color: #f8f5ec !important;
 }
 
 .error {
