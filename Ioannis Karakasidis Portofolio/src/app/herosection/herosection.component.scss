@@ -23,7 +23,7 @@
     }
   }
   > div:nth-child(2) {
-    background-image: url("../../assets/img/Bg shape for Photo (1).png");
+    background-image: url("../../assets/img/Bild.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -45,7 +45,7 @@
       align-items: center;
     }
     &:hover {
-      background-image: url("../../assets/img/Bild.png");
+      background-image: url("../../assets/img/Bg shape for Photo (1).png");
     }
     > img:nth-child(1) {
       height: 38rem;

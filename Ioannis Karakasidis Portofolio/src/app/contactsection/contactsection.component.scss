@@ -1,7 +1,6 @@
 .contact-section {
   max-width: fit-content;
   width: 100%;
-  height: 661px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +61,7 @@
           height: 100%;
           display: flex;
           align-items: center;
-          @media (max-width: 343px) {
+          @media (max-width: 400px) {
             display: flex;
             justify-content: center;
             gap: 25px;
@@ -130,6 +129,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        gap: 25px;
         > div:nth-child(1) {
           font-family: "JosefinSans";
           font-weight: 400;
@@ -137,25 +137,40 @@
           color: #f8f5ec;
         }
         > div:nth-child(1) {
-          display: flex;
-          align-items: center;
           width: 100%;
           @media (max-width: 896px) {
             justify-content: center;
-          }
-          > button:nth-child(1) {
-            border: none;
-            background: none;
-            cursor: pointer;
-          }
-          > div:nth-child(2) {
             display: flex;
-            flex-direction: column;
-            width: 61%;
-            > span:nth-child(1) {
+          }
+          > div:nth-child(1) {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: space-between;
+            @media (max-width: 400px) {
+              height: unset;
+              width: 66%;
+            }
+
+            > button:nth-child(1) {
+              border: none;
+              background: none;
+              cursor: pointer;
+            }
+            > div:nth-child(2) {
               display: flex;
-              align-items: center;
-              justify-content: space-between;
+              flex-direction: column;
+              width: 95%;
+              height: 100%;
+              justify-content: space-around;
+              > div:nth-child(2) {
+                height: 30px;
+              }
+              > span:nth-child(1) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
             }
           }
         }
@@ -166,8 +181,11 @@
           @media (max-width: 896px) {
             width: 83%;
           }
+          @media (max-width: 400px) {
+            justify-content: center;
+          }
           > input:nth-child(1) {
-            border: 1px solid #f8f5ec;
+            border: 2px solid #f8f5ec;
             padding: 13px 30px;
             border-radius: 30px;
             opacity: 50%;
@@ -251,7 +269,7 @@
           }
           @media (max-width: 896px) {
             max-width: 419px;
-            width: 58%;
+            width: 71%;
           }
         }
       }
@@ -293,6 +311,11 @@ input:-webkit-autofill:active {
   }
 }
 
+.active {
+  border: 2px solid #89bcd9 !important;
+  color: #89bcd9 !important;
+}
+
 .textcolor {
   color: #89bcd9;
 }
@@ -324,5 +347,6 @@ input:-webkit-autofill:active {
 }
 
 .width {
-  width: 85% !important;
+  width: 94% !important;
+  padding-top: 5px;
 }

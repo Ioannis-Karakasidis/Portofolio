@@ -7,12 +7,12 @@
   </div>
   <div>
     <img
-      *ngIf="showImage"
+      *ngIf="showImage || windowWidth > 400"
       draggable="false"
       src="../../assets/img/Bild1.png"
       alt=""
     />
-    <div *ngIf="!showImage" class="boxlinkss">
+    <div *ngIf="!showImage && windowWidth <= 400" class="boxlinkss">
       <a class="boxlinks" href="#why-me">{{
         Isgerman.isgerman ? "Warum ich" : "Why me"
       }}</a>
