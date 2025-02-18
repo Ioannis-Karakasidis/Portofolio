@@ -1,6 +1,8 @@
 <div class="myprojects-section" id="Projects">
   <div>
-    <div><h2>My Projects</h2></div>
+    <div>
+      <h2>{{ isgerman.isgerman ? "Meine Projekte" : "My Projects" }}</h2>
+    </div>
     <div>
       <div>
         <div>
@@ -60,7 +62,8 @@
                       .technologies
                   "
                 >
-                  <img draggable="false"
+                  <img
+                    draggable="false"
                     src="../../assets/img/skillicons/{{ icon }}.png"
                     alt=""
                   />
