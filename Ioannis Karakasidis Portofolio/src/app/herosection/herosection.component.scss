@@ -24,16 +24,18 @@
   }
   > div:nth-child(2) {
     background-image: url("../../assets/img/Bild.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 38rem;
-    height: 40rem;
+    min-width: 600px;
+    height: 619px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
-    border-radius: 50%;
+    position: relative;
+    border-radius: 10% 10% 48% 38%;
+
     @media (max-width: 800px) {
       width: 80vw;
       height: unset;
@@ -44,9 +46,11 @@
       display: flex;
       align-items: center;
     }
+
     &:hover {
-      background-image: url("../../assets/img/Bg shape for Photo (1).png");
+      animation: backgroundImageChange 1s forwards;
     }
+
     > img:nth-child(1) {
       height: 38rem;
       @media (max-width: 800px) {
@@ -55,6 +59,15 @@
       }
     }
   }
+  @keyframes backgroundImageChange {
+    0% {
+      background-image: url("../../assets/img/Bild.png");
+    }
+    100% {
+      background-image: url("../../assets/img/Bg shape for Photo (1).png");
+    }
+  }
+
   > div:nth-child(3) {
     display: flex;
     @media (max-width: 1205) {

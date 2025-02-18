@@ -83,6 +83,7 @@
           <div>
             <button (click)="changepic()" type="button">
               <img
+                draggable="false"
                 *ngIf="Checked"
                 #checked
                 src="../../assets/img/Checkboxchecked.png"
@@ -91,6 +92,7 @@
                 height="24"
               />
               <img
+                draggable="false"
                 *ngIf="!Checked && !error"
                 #checdked
                 src="../../assets/img/Checkboxunchecked.png"
@@ -99,6 +101,7 @@
                 height="24"
               />
               <img
+                draggable="false"
                 *ngIf="error"
                 #error
                 src="../../assets/img/Ellipse 32.png"
@@ -112,6 +115,7 @@
                 <span #privacy>
                   Ich habe die
                   <a
+                    draggable="false"
                     routerLink="/Datenschutz"
                     routerLinkActive="active"
                     class="textcolor"
@@ -238,6 +242,7 @@
                 <span #privacy>
                   I've read the
                   <a
+                    draggable="false"
                     routerLink="/Datenschutz"
                     routerLinkActive="active"
                     class="textcolor"
@@ -262,7 +267,9 @@
   }
   <div>
     <div>
-      <a href="#profile"><img src="../../assets/img/Arrow Up.png" alt="" /></a>
+      <a href="#profile" draggable="false"
+        ><img draggable="false" src="../../assets/img/Arrow Up.png" alt=""
+      /></a>
     </div>
   </div>
   <div class="complete" #overlay>

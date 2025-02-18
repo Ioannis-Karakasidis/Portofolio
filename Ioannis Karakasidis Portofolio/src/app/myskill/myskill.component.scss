@@ -58,13 +58,29 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
+      transition: background-image 0.8s ease; /* Animate the background-image change */
+      gap: 20px;
+
+      &:hover {
+        animation: backgroundImageChange 1s ease forwards;
+      }
+
+      @keyframes backgroundImageChange {
+        0% {
+          background-image: url("../../assets/img/skillicons/Shape.png");
+        }
+        100% {
+          background-image: url("../../assets/img/hoveredicons/Ellipse\ BG.png");
+        }
+      }
+
       @media (max-width: 400px) {
         width: 100%;
       }
       &:hover {
         background-image: url("../../assets/img/hoveredicons/Ellipse\ BG.png");
       }
-      gap: 20px;
+
       > h3:nth-child(1) {
         font-family: "JosefinSans";
         font-size: 18px;

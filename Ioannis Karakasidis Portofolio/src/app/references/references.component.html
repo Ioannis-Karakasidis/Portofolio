@@ -7,6 +7,7 @@
         <div>
           <p>Projekt</p>
           <a
+            draggable="false"
             href="https://join.ioanniskarakasidis.com/index.html"
             target="_blank"
             >{{ ref.project }}</a
@@ -14,6 +15,7 @@
         </div>
         <span class="german">{{ ref.description }}</span>
         <a
+          draggable="false"
           *ngIf="ref.link"
           [href]="ref.link"
           target="_blank"
