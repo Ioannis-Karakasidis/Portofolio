@@ -53,3 +53,16 @@
     align-items: center;
   }
 }
+
+.background {
+  background-image: url(../../assets/img/Ellipse.png);
+  height: 80px;
+  width: 128px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f5ec !important;
+}

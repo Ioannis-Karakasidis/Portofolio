@@ -28,6 +28,7 @@ export class HerosectionComponent {
   Isgerman = inject(LanguageService);
   showImage: boolean = true;
   @HostListener('window:resize', ['$event'])
+  
   onResize(event: any) {
     this.windowWidth = event.target.innerWidth;
   }

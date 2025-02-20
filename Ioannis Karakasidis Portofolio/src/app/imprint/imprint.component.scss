@@ -36,11 +36,8 @@ app-header {
 
 div {
   display: flex;
-  justify-content: center;
   flex: 1;
-  margin: 10.5px 0 13px 0;
   overflow-wrap: break-word;
-  padding: 0 10px;
   flex-direction: column;
   max-width: 1920px;
   width: 100%;
@@ -72,6 +69,5 @@ app-footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 9.5px 0;
   margin-top: auto;
 }

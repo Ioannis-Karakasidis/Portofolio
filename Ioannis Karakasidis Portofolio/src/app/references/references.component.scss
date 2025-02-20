@@ -21,16 +21,20 @@
   > div:nth-child(1) {
     > h2:nth-child(1) {
       font-family: "JosefinSans";
-      font-weight: 400px;
+      font-weight: 400;
       font-size: 32px;
       text-align: center;
       color: #89bcd9;
+      @media (max-width: 400px) {
+        font-size: 18px;
+      }
     }
   }
   > div:nth-child(2) {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    height: 100%;
     @media (max-width: 1245px) {
       overflow-x: scroll;
       scrollbar-width: none;
@@ -39,20 +43,32 @@
 }
 
 .templatebox {
-  background-image: url("../../assets/img/hoveredicons/Ellipse\ BG\ \(1\).png");
-  background-size: contain;
-  width: 378px;
-  height: 373px;
+  background-image: url("../../assets/img/skillicons/Shape.png");
+  min-width: 369px;
+  width: 100%;
+  min-height: 380px;
+  height: 100%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-  gap: 17px;
-  @media (max-width: 1245px) {
-    width: unset;
+  justify-content: center;
+  transition: background-image 0.8s ease;
+  gap: 20px;
+
+  &:hover {
+    animation: backgroundImageChanges 1s ease forwards;
+  }
+
+  @keyframes backgroundImageChanges {
+    0% {
+      background-image: url("../../assets/img/skillicons/Shape.png");
+    }
+    100% {
+      background-image: url("../../assets/img/hoveredicons/Ellipse\ BG.png");
+    }
   }
   > h2:nth-child(1) {
     font-family: "JosefinSans";
@@ -60,6 +76,10 @@
     font-size: 26px;
     text-align: center;
     color: #f8f5ec;
+    width: 60%;
+    @media (max-width: 400px) {
+      font-size: 19px;
+    }
   }
   > div:nth-child(2) {
     display: flex;
@@ -84,12 +104,15 @@
     width: 292px;
     font-family: "JosefinSans";
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     color: #fffdfd;
     text-align: center;
     @media (max-width: 400px) {
-      width: 387px;
       font-size: 17px;
+    }
+    @media (max-width: 320px) {
+      font-size: 12px;
+      width: 227px;
     }
   }
   > a:nth-child(4) {
@@ -106,8 +129,17 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-}
-
-.german {
-  width: 331px !important;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    height: 67rem;
+  }
+  @media (max-width: 500px) {
+    width: 92%;
+  }
+  @media (max-width: 400px) {
+    flex-direction: row;
+    height: unset;
+    width: unset;
+  }
 }

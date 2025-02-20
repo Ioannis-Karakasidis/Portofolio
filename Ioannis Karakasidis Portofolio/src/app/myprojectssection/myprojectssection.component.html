@@ -1,10 +1,10 @@
 <div class="myprojects-section" id="Projects">
-  <div>
+  <div >
     <div>
-      <h2>{{ isgerman.isgerman ? "Meine Projekte" : "My Projects" }}</h2>
+      <h2>{{ information.isgerman ? "Meine Projekte" : "My Projects" }}</h2>
     </div>
-    <div>
-      <div>
+    <div >
+      <div >
         <div>
           <div [ngClass]="{ active: activeProject === 'Join' }">
             <button (click)="showactiveclass($event, 'Join')">1. Join</button>
@@ -25,7 +25,7 @@
             *ngIf="information.information[activeProject]"
             class="project-details"
           >
-            <div>
+            <div data-aos="fade-right">
               <div
                 *ngFor="
                   let section of information.information[activeProject].details
@@ -34,20 +34,20 @@
                 <div>
                   <img src="../../assets/img/Ellipse 8.png" alt="" />
                   <h2 class="title">
-                    {{ section.title[isgerman.isgerman ? "de" : "en"] }}
+                    {{ section.title[information.isgerman ? "de" : "en"] }}
                   </h2>
                 </div>
                 <div>
                   <span class="text">{{
-                    section.description[isgerman.isgerman ? "de" : "en"]
+                    section.description[information.isgerman ? "de" : "en"]
                   }}</span>
                 </div>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <div class="smalltext">
                 <p class="title">
-                  {{ isgerman.isgerman ? "Technologien" : "Technologies "
+                  {{ information.isgerman ? "Technologien" : "Technologies "
                   }}<span class="mobileview">:</span>
                 </p>
                 <p class="mobileview">

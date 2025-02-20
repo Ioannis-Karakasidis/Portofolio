@@ -12,18 +12,11 @@ type ProjectKey = 'Join' | 'ElPocoLoco' | 'OngoingProject';
   styleUrl: './myprojectssection.component.scss',
 })
 export class MyprojectssectionComponent {
-  activeProject: ProjectKey = 'ElPocoLoco';
-  isgerman = inject(LanguageService);
+  activeProject: ProjectKey = 'Join';
   information = inject(LanguageService);
-  showactiveclass($event: MouseEvent, projectId: string): void {
-    const target = $event.target as HTMLElement;
-    const parent = target?.parentElement;
-    if (parent) {
-      document.querySelectorAll('.myprojects-section > div').forEach((div) => {
-        div.classList.remove('active');
-      });
-      parent.classList.add('active');
-    }
-    this.activeProject = projectId as ProjectKey;
+  showactiveclass($event: MouseEvent, projectId: ProjectKey): void {
+    setTimeout(() => {
+      this.activeProject = projectId;
+    }, 250);
   }
 }

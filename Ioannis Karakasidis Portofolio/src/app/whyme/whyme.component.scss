@@ -1,5 +1,5 @@
 .whyme-section {
-  max-width: 860px;
+  max-width: 1920px;
   padding: 100px 0 100px 0;
   gap: 80px;
   display: flex;
@@ -20,7 +20,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    gap: 54px;
+    gap: 5rem;
     @media (max-width: 1031px) {
       flex-direction: column;
       gap: 20px;

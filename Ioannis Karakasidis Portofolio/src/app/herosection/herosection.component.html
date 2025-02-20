@@ -2,8 +2,11 @@
   <div class="d-none">
     <app-headerlogo [path]="path"></app-headerlogo
     ><button (click)="toggleImage()">
-      <img src="../../assets/img/menu.png" alt="" />
+      <div *ngIf="!showImage; else showMenu">X</div>
     </button>
+    <ng-template #showMenu>
+      <img src="../../assets/img/menu.png" alt="" />
+    </ng-template>
   </div>
   <div>
     <img

@@ -24,6 +24,7 @@ export class ReferencesComponent {
       project: 'Join',
       description:
         'Ioannis is a highly skilled developer with a strong focus on frontend development and user experience. His creativity, attention to detail, and ability to translate complex ideas into intuitive designs set him apart. Ioannis is a reliable and innovative team player who always delivers exceptional work.',
+      link: 'https://www.linkedin.com/in/maik-joe-sedlmaier-55a898342/',
     },
   ];
 
@@ -40,6 +41,7 @@ export class ReferencesComponent {
       project: 'Join',
       description:
         'Ioannis ist ein sehr fähiger Entwickler mit einem starken Fokus auf Frontend-Entwicklung und Benutzererfahrung. Seine Kreativität, Detailgenauigkeit und die Fähigkeit, komplexe Ideen in intuitive Designs umzusetzen, heben ihn hervor. Ioannis ist ein zuverlässiger und innovativer Teamplayer, der immer außergewöhnliche Arbeit liefert.',
+      link: 'https://www.linkedin.com/in/maik-joe-sedlmaier-55a898342/',
     },
   ];
 }

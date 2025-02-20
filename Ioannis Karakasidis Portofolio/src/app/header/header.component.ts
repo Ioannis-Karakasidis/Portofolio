@@ -12,5 +12,9 @@ import { HerosectionComponent } from '../herosection/herosection.component';
 })
 export class HeaderComponent {
   languageService = inject(LanguageService);
-  
+  activeLink = '';
+
+  setActive(link: string) {
+    this.activeLink = link;
+  }
 }
