@@ -14,7 +14,6 @@
     flex-direction: column;
     width: 87%;
     align-items: center;
-
   }
   > div:nth-child(1) {
     display: flex;
@@ -72,7 +71,7 @@
         > div:nth-child(2) {
           display: flex;
           flex-direction: column;
-          gap: 25px;
+          gap: 26px;
         }
         > div:nth-child(1) {
           display: flex;
@@ -116,6 +115,21 @@
               font-weight: 400;
               font-size: 20px;
               color: #f8f5ec;
+            }
+            > span:nth-child(2) {
+              font-family: "JosefinSans";
+              font-weight: 400;
+              font-size: 20px;
+              color: #f8f5ec;
+            }
+            > a:nth-child(3) {
+              font-family: "JosefinSans";
+              font-weight: 400;
+              font-size: 20px;
+              color: #f8f5ec;
+              &:hover {
+                color: #89bcd9;
+              }
             }
           }
         }
@@ -310,6 +324,13 @@ input:-webkit-autofill:active {
   color: red;
   @media (max-width: 320px) {
     width: calc(100% - 52px);
+  }
+}
+
+.link {
+  color: #f8f5ec;
+  &:hover{
+    color: #89bcd9;
   }
 }
 
