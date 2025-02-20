@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { LanguageService } from '../language.service';
-
 type ProjectKey = 'Join' | 'ElPocoLoco' | 'OngoingProject';
 
 @Component({

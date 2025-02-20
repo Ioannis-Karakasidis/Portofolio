@@ -1,10 +1,10 @@
 <div class="myprojects-section" id="Projects">
-  <div >
+  <div>
     <div>
       <h2>{{ information.isgerman ? "Meine Projekte" : "My Projects" }}</h2>
     </div>
-    <div >
-      <div >
+    <div>
+      <div>
         <div>
           <div [ngClass]="{ active: activeProject === 'Join' }">
             <button (click)="showactiveclass($event, 'Join')">1. Join</button>
@@ -25,7 +25,7 @@
             *ngIf="information.information[activeProject]"
             class="project-details"
           >
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" id="left-div">
               <div
                 *ngFor="
                   let section of information.information[activeProject].details
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" id="right-div">
               <div class="smalltext">
                 <p class="title">
                   {{ information.isgerman ? "Technologien" : "Technologies "
