@@ -107,7 +107,7 @@ export class LanguageService {
         {
           title: { en: 'About the project', de: 'Über das Projekt' },
           description: {
-            en: 'I am Developing with my colleagues a Slack Clone App that revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. Working on this project helped me enhance my skills in structuring workflows and organizing tasks efficiently.',
+            en: 'I am developing with my colleagues a Slack Clone App that revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. Working on this project helped me enhance my skills in structuring workflows and organizing tasks efficiently.',
             de: 'Ich habe eine Slack-Klon-App entwickelt, die die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeitnachrichten und einer leistungsstarken Kanalorganisation revolutioniert. Die Arbeit an diesem Projekt half mir, meine Fähigkeiten in der Strukturierung von Arbeitsabläufen und der effizienten Organisation von Aufgaben zu verbessern.',
           },
         },
